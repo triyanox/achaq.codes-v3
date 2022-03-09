@@ -5,12 +5,12 @@ import prettier from "prettier";
 async function generate() {
   const prettierConfig = await prettier.resolveConfig("./.prettierrc.js");
   const pages = await globby([
-    "pages/*.js",
+    "pages/*.tsx",
     "posts/*.mdx",
-    "!data/*.js",
-    "!pages/_*.js",
+    "!data/*.tsx",
+    "!pages/_*.tsx",
     "!pages/api",
-    "!pages/404.js",
+    "!pages/404.tsx",
   ]);
 
   const sitemap = `
@@ -25,7 +25,7 @@ async function generate() {
             const path = page
               .replace("pages", "")
               .replace("posts", "")
-              .replace(".js", "")
+              .replace(".tsx", "")
               .replace(".mdx", "");
             const route = path === "/index" ? "" : path;
 

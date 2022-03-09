@@ -23,7 +23,7 @@ const Skills = () => {
               <h1 className="text-2xl lg:text-3xl">UI</h1>
             </div>
             <div>
-              <h2 className="text-xl md:text-2xl">
+              <h2 className="text-xl ">
                 I design modern user interfaces for Web, Android and IOS and
                 every pixel matters!
               </h2>
@@ -39,7 +39,7 @@ const Skills = () => {
               <h1 className="text-2xl lg:text-3xl">UX</h1>
             </div>
             <div>
-              <h2 className="text-xl md:text-2xl">
+              <h2 className="text-xl ">
                 I design modern and imersive user experiences with high priority
                 to accessibility and performance.
               </h2>
@@ -55,7 +55,7 @@ const Skills = () => {
               <h1 className="text-2xl lg:text-3xl">Front End</h1>
             </div>
             <div>
-              <h2 className="text-xl md:text-2xl">
+              <h2 className="text-xl">
                 I turn my design ideas into stuning and functional applications
                 while maintaining clean code.
               </h2>
@@ -71,7 +71,7 @@ const Skills = () => {
               <h1 className="text-2xl lg:text-3xl">Back End</h1>
             </div>
             <div>
-              <h2 className="text-xl md:text-2xl">
+              <h2 className="text-xl">
                 I add more functionalities to my applications with a highly
                 optimized back-end servers.
               </h2>

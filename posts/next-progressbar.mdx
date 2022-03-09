@@ -1,0 +1,86 @@
+---
+title: How to add a progressbar to your nextjs app
+date: Feb 01 2022
+description: Add a progressbar to your nextjs app to indicate route changes
+thumbnailUrl: "/static/images/nextjs-progressbar.png"
+tags: "nextjs, react"
+author: "Mohamed Achaq"
+readTime: "1"
+link: "next-progressbar"
+---
+
+<Imagecomponent
+  src={`/static/images/nextjs-progressbar.png`}
+  alt={`Nextjs Progressbar`}
+  width={`1920`}
+  height={`1080`}
+  priority
+/>
+
+A progressbar can always add value to your web app, in terms of user experience, you can inform the
+user that something is happening under the hood, in our case we will use it to inform the user that
+the route is changing, and this is very helpfull especially for people with slow connection,
+because sometime the user will think that your app is not working if he didn't notice that his connection
+is slow !
+
+### Installing the package :
+
+To add a progressbar to your next app you will need a package called **Next.js Progressbar**
+To install it to your application first open a terminal in your app directory and run
+
+<Highlighter language="bash">
+  {`
+$ yarn add nextjs-progressbar
+or
+$ npm i nextjs-progressbar
+  `}
+</Highlighter>
+
+### Basic Usage :
+
+To use this package simply head back to your _\_app.js_ file and import it and add it before the
+app component like this
+
+<Highlighter language="jsx">
+  {`
+import "../styles/globals.css"
+import NextNProgress from "nextjs-progressbar"
+function MyApp({ Component, pageProps }) {
+  return (
+    <>
+      <NextNProgress />
+      <Component {...pageProps} />
+    </>
+  )
+}
+export default MyApp;
+  `}
+</Highlighter>
+
+### Advanced Usage :
+
+You can overide the default config of _NextNProgress_ you can use some properties like this
+
+<Highlighter language="jsx">
+  {`
+import "../styles/globals.css"
+import NextNProgress from "nextjs-progressbar"
+function MyApp({ Component, pageProps }) {
+  return (
+    <>
+      <NextNProgress
+        color="#6B21A8"
+        startPosition={0.3}
+        stopDelayMs={200}
+        height={2}
+        showOnShallow={true}
+      />
+      <Component {...pageProps} />
+    </>
+  )
+}
+export default MyApp;
+  `}
+</Highlighter>
+
+and you can find more usefull use cases in the package github repo [NextNProgress](https://github.com/apal21/nextjs-progressbar)

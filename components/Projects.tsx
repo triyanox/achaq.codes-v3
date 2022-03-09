@@ -45,11 +45,7 @@ function Projects() {
         >
           {projectsdata.map((project) => (
             <motion.div variants={fadeInUp} key={project.id}>
-              <motion.div
-                initial={{ scale: 0 }}
-                whileInView={{ scale: 1 }}
-                transition={{ duration: 0.5 }}
-              >
+              
                 <ProjectCard
                   id={project.id}
                   title={project.title}
@@ -58,7 +54,7 @@ function Projects() {
                   source={project.source}
                   preview={project.preview}
                 />
-              </motion.div>
+              
             </motion.div>
           ))}
         </motion.div>

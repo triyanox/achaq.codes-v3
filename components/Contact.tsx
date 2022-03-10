@@ -34,7 +34,7 @@ function ContactForm() {
       <div className="flex flex-col justify-center items-center mt-16 px-auto">
         
         <div className="mt-8  flex  flex-col items-center justify-center gap-4 ">
-          <div className="select-none w-80 text-xl p-5 h-12  text-black   dark:text-white focus:outline-none focus:shadow-outline   rounded-md border-2  border-[#6320EE] dark:border-[#FF6B6B] broder flex justify-center items-center">
+          <div className="select-none w-80 text-2xl p-5 h-12  text-black   dark:text-white focus:outline-none focus:shadow-outline   rounded-md border-2  border-[#6320EE] dark:border-[#FF6B6B] broder flex justify-center items-center">
             motriyanox@gmail.com
           </div>
 

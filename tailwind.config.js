@@ -8,9 +8,6 @@ module.exports = {
   darkMode: "class",
   theme: {
     extend: {
-      fontFamily: {
-        sans: ["Josefin Sans", ...defaultTheme.fontFamily.sans-serif],
-      },
       animation: {
         "gradient-x": "gradient-x 3s ease infinite",
         "gradient-y": "gradient-y 3s ease infinite",

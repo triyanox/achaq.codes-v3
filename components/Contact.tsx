@@ -25,7 +25,7 @@ function ContactForm() {
       id="contact"
       className=" h-screen px-4 lg:px-12 justify-center items-center "
     >
-      <div className="w-full text-black dark:text-white pt-16 text-center">
+      <div className="w-full text-black dark:text-white pt-24 text-center">
         <h1 className="text-3xl mb-4 bg-gradient-to-r from-[#FF6B6B] to-[#6320EE] text-transparent bg-clip-text animate-gradient-x">
           Contact
         </h1>

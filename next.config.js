@@ -6,6 +6,9 @@ const nextConfig = {
     locales: ["en"],
     defaultLocale: "en",
   },
+  images: {
+    formats: ['image/avif', 'image/webp'],
+  },
 };
 
 module.exports = nextConfig;

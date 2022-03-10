@@ -7,7 +7,7 @@ interface Props {
 }
 const BlogPrev = (props: Props) => {
   return (
-    <div className="relative flex w-full h-40 md:h-56 justify-center flex-col gap-y-16  hover:-translate-y-1 hover:-skew-y-3 active:scale-90 transition-all duration-300 ">
+    <div className="relative flex w-full h-40 md:h-56 justify-center flex-col gap-y-16  hover:-translate-y-1 hover:translate-y-3 active:scale-90 transition-all duration-300 ">
       <div className="flex flex-col p-2">
         <div className="flex flex-row justify-between mb-2 ">
           <div className="text-xs text-black dark:text-white">{props.date}</div>

@@ -9,7 +9,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-            sans: ['Josefin Sans', ...defaultTheme.fontFamily.sans]
+            sans: ['Josefin Sans', ...fontFamily.sans]
           },
       animation: {
         "gradient-x": "gradient-x 3s ease infinite",

@@ -32,10 +32,8 @@ function ContactForm() {
         <h2 className="text-xl">Get in touch with me !</h2>
       </div>
       <div className="flex flex-col justify-center items-center mt-16 px-auto">
-        <h3 className="text-black dark:text-white mb-2 text-center text-xl">
-          This is my email !
-        </h3>
-        <div className="mt-8  flex  flex-col md:flex-row items-center justify-center gap-4 ">
+        
+        <div className="mt-8  flex  flex-col items-center justify-center gap-4 ">
           <div className="select-none w-80 text-xl p-5 h-12  text-black   dark:text-white focus:outline-none focus:shadow-outline   rounded-md border-2  border-[#6320EE] dark:border-[#FF6B6B] broder flex justify-center items-center">
             motriyanox@gmail.com
           </div>
@@ -56,7 +54,7 @@ function ContactForm() {
           <div className="mt-8 flex flex-row justify-center items-center gap-4">
             <Link href="https://www.linkedin.com/in/achaqdev/" passHref>
               <a target="_blank">
-                <h1 className="text-black dark:text-white text-2xl hover:text-blue-600 hover:dark:text-blue-600 ">
+                <h1 className="text-black dark:text-white text-2xl text-blue-600 dark:text-blue-600 ">
                   <SiLinkedin />
                 </h1>
               </a>
@@ -64,7 +62,7 @@ function ContactForm() {
 
             <Link href="https://twitter.com/ac__haq" passHref>
               <a target="_blank">
-                <h1 className="text-black dark:text-white text-2xl hover:text-blue-500 hover:dark:text-blue-500">
+                <h1 className="text-black dark:text-white text-2xl text-blue-500 dark:text-blue-500">
                   <SiTwitter />
                 </h1>
               </a>
@@ -72,7 +70,7 @@ function ContactForm() {
 
             <Link href="https://instagram.com/ac.haq/" passHref>
               <a target="_blank">
-                <h1 className="text-black dark:text-white text-2xl hover:text-pink-700 hover:dark:text-pink-700">
+                <h1 className="text-black dark:text-white text-2xl text-pink-700 dark:text-pink-700">
                   <SiInstagram />
                 </h1>
               </a>

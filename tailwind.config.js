@@ -1,4 +1,5 @@
 const plugin = require("tailwindcss/plugin");
+const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
   content: [
@@ -8,6 +9,9 @@ module.exports = {
   darkMode: "class",
   theme: {
     extend: {
+       fontFamily: {
+        sans: ['Josefin Sans', ...defaultTheme.fontFamily.sans],
+      },
       animation: {
         "gradient-x": "gradient-x 3s ease infinite",
         "gradient-y": "gradient-y 3s ease infinite",

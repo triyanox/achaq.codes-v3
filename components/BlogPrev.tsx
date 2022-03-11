@@ -15,10 +15,10 @@ const BlogPrev = (props: Props) => {
             {props.readTime + " min read"}
           </div>
         </div>
-        <h1 className="text-3xl  tracking-tight text-[#6320EE] dark:text-[#FF6B6B] mb-2">
+        <h1 className="text-2xl md:text-3xl  tracking-tight text-[#6320EE] dark:text-[#FF6B6B] mb-2">
           {props.title}
         </h1>
-        <h3 className=" text-lg text-black dark:text-white">
+        <h3 className="text-md md:text-lg text-black dark:text-white">
           {props.description}
         </h3>
       </div>

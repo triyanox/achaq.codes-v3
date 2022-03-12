@@ -15,7 +15,6 @@
   "dependencies": {
     "framer-motion": "^6.2.8",
     "gray-matter": "^4.0.3",
-    "preact": "^10.6.6",
     "next": "12.1.0",
     "nextjs-progressbar": "^0.0.14",
     "react": "17.0.2",

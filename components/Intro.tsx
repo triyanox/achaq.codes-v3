@@ -22,6 +22,7 @@ const Intro = () => {
           alt="Mohamed Achaq - Full Stack Developer"
           width={400}
           height={400}
+          placeholder="blur"
         />
       </div>
     </section>

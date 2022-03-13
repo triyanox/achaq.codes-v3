@@ -37,7 +37,9 @@ export const getStaticProps = async ({ params: { slug } }: Params) => {
 
   const { data: frontMatter, content } = matter(markdownWithMeta);
   const mdxSource = await serialize(content, {
-    mdxOptions: { rehypePlugins: [rehypeHighlight] },
+    mdxOptions: {
+      rehypePlugins: [rehypeHighlight],
+    },
   });
 
   return {

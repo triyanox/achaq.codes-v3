@@ -4,7 +4,7 @@ export const projectsdata = [
     title: "File Metadata Microservice",
     description: "File Metadata Microservice",
     source: "https://github.com/triyanox/File-Metadata-Microservice",
-    preview: "https://boilerplate-project-filemetadata.triyanox.repl.co/",
+    preview: "https://replit.com/@triyanox/boilerplate-project-filemetadata",
     stack: ["Node.js","Express.js","Multer.js"],
   },
   {
@@ -12,7 +12,7 @@ export const projectsdata = [
     title: "Exercise Tracker",
     description: "Exercise Tracker using node.js, express.js and mongodb",
     source: "https://github.com/triyanox/Exercise-Tracker",
-    preview: "https://boilerplate-project-exercisetracker.triyanox.repl.co/",
+    preview: "https://replit.com/@triyanox/boilerplate-project-exercisetracker",
     stack: ["Node.js","Express.js","Mongodb"],
   },
   {
@@ -20,7 +20,7 @@ export const projectsdata = [
     title: "URL Shortener",
     description: "URL Shortener Microservice",
     source: "https://github.com/triyanox/URL-Shortener-Microservice",
-    preview: "https://boilerplate-project-urlshortener.triyanox.repl.co/",
+    preview: "https://replit.com/@triyanox/boilerplate-project-urlshortener",
     stack: ["Node.js","Express.js","Mongodb"],
   },
   {
@@ -28,7 +28,7 @@ export const projectsdata = [
     title: "Request Header Parser",
     description: "Request Header Parser Microservice",
     source: "https://github.com/triyanox/Request-Headers-Parser",
-    preview: "https://boilerplate-project-headerparser.triyanox.repl.co/",
+    preview: "https://replit.com/@triyanox/boilerplate-project-headerparser",
     stack: ["Node.js","Express.js"],
   },
     {
@@ -36,7 +36,7 @@ export const projectsdata = [
     title: "Timestamp Microservice",
     description: "Timestamp Microservice With Express.js",
     source: "https://github.com/triyanox/Timestamp-Microservice",
-    preview: "https://boilerplate-project-timestamp.triyanox.repl.co/",
+    preview: "https://replit.com/@triyanox/boilerplate-project-timestamp",
     stack: ["Node.js","Express.js"],
   },
   {

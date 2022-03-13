@@ -6,7 +6,7 @@ function Header() {
   const { active, setActive } = useContext(ActiveContext);
   return (
     <section className=" mt-0 fixed h-12 w-full z-50 top-0  ">
-      <nav className=" bg-white dark:bg-black  py-3  flex items-center justify-between flex-row mx-4 md:mx-8 lg:mx-6 mt-3 px-4 rounded-full firefox:bg-opacity-60 firefox:dark:bg-opacity-60 bg-opacity-20 dark:bg-opacity-20 backdrop-blur-2xl">
+      <nav className=" bg-white dark:bg-black  py-3  flex items-center justify-between flex-row mx-4 md:mx-8 lg:mx-6 mt-3 px-4 rounded-full firefox:bg-opacity-70 firefox:dark:bg-opacity-70 bg-opacity-40 dark:bg-opacity-40 backdrop-blur-2xl">
         <div className=" w-full lg:inline-flex  hidden lg:visible text-xl">
           <Link href="/">
             <a className="lg:inline-flex lg:w-auto w-full px-3 pb-8 lg:pb-0  text-black dark:text-white    items-center justify-center active:scale-90 duration-500">

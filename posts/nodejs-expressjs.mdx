@@ -42,13 +42,11 @@ the following elements:
 
 This HTTP request will be something like this :
 
-<Highlighter language="http">
-  {`
+```
 GET /static/index.html HTTP/1.1
 Accept-Language: ar, en
 If-Modified-Since: Wed, 16 Feb 2022 15:39:02 GMT
-  `}
-</Highlighter>
+```
 
 The server recives the request and executes some code and sends back an HTTP response
 to the user, this response contains the following elements:
@@ -68,14 +66,12 @@ to the user, this response contains the following elements:
 
 This HTTP response may look like this :
 
-<Highlighter language="http">
-  {`
+```
 HTTP/1.1 200 OK
 Date: Wed, 16 Feb 2022 15:39:02 GMT
 server: nginx/1.21.5
 Content-type: image/jpg
-  `}
-</Highlighter>
+```
 
 Now you understand how REST APIs and HTTP work, let go to fun part and start making your
 first API with **nodejs** and **expressjs**!
@@ -89,8 +85,7 @@ runtime environment built on top of **Google's** **V8** engine and executes Java
 With **Nodejs** we handle incoming HTTP requests by using the HTTP module to create a server and listen to events
 on different routes like this :
 
-<Highlighter language="javascript">
-  {`
+```js
 const http = require("http");
 const fs = require("fs").promises;
 const server = http.createServer((req, res) => {
@@ -118,9 +113,7 @@ const server = http.createServer((req, res) => {
 });
 server.listen(5000);
 console.log("listening on port 5000");
-`}
-
-</Highlighter>
+```
 
 In this example we have required 2 modules the **http** module and the **fs** module which is the file system module
 built in **Nodejs** core modules to read and serve an **HTML** file.
@@ -146,37 +139,29 @@ like **expresjs** which is the most popular !
 
 First check out if **Node** is installed in your machine by using this command
 
-<Highlighter language="bash">
-  {`
+```bash
 node -v
-  `}
-</Highlighter>
+```
 
 Then to get started create a new folder, and start a terminal session in this folder .
 
 Create a package.json file
 
-<Highlighter language="bash">
-  {`
+```bash
 npm init
-  `}
-</Highlighter>
+```
 
 Install **expressjs** packgae
 
-<Highlighter language="bash">
-  {`
+```bash
 npm i express
-  `}
-</Highlighter>
+```
 
 And create an index.js file where you code will execute
 
-<Highlighter language="bash">
-  {`
+```bash
 touch index.js
-  `}
-</Highlighter>
+```
 
 and open it with your favourite code editor.
 
@@ -185,59 +170,50 @@ and open it with your favourite code editor.
 In the top of your **index.js** file require the **express** module and store it in a constant called express then store
 this constant in an other constant called **app**
 
-<Highlighter language="javascript">
-  {`
+```js
 const express = require("express");
 const app = express();
-  `}
-</Highlighter>
+```
 
 ### Create a listener
 
 Like the **http** module we need a listener to listen to a giveen port
 
-<Highlighter language="javascript">
-  {`
+```js
 app.listen(5000);
-  `}
-</Highlighter>
+```
 
 ### Create some data:
 
 In this article we're not going to use a real database to keep the article short and simple so we are going store our data
 in memory keep in mind that in real world application we're not going to store data in memory we use databases.
 
-<Highlighter language="javascript">
-  {`
+```js
 let users = [
   { id: 1, name: "Mohamed Achaq" },
   { id: 2, name: "Bojack Horseman" },
   { id: 3, name: "Rick Sanchez" },
-]
-  `}
-</Highlighter>
+];
+```
 
 ### Handling GET requests:
 
 With **Express** handling **GET** request is very simple, we use the **app.get()** method that takes two arguments
 the first argument is the route and the second is a callback function that takes a request and a response as arguments.
 
-<Highlighter language="javascript">
-  {`
+```js
 // GET all the users
 app.get("/api/users", (req, res) => {
   res.send(users);
 });
-  `}
-</Highlighter>
+```
 
 ### Handling GET requests by parametres:
 
 When we want to get a specific element in our case to get single user by giveen id we use the id param in our **GET**
 handler
 
-<Highlighter language="javascript">
-  {`
+```js
 // GET user by id
 app.get("/api/users/:id", (req, res) => {
   let user = users.find((user) => user.id === parseInt(req.params.id));
@@ -247,8 +223,7 @@ app.get("/api/users/:id", (req, res) => {
   }
   res.send(user);
 });
-  `}
-</Highlighter>
+```
 
 in this example we have used the id param to get a user with matching id and if the user dosn't exist we return "user not found"
 with status code of **404**
@@ -260,39 +235,32 @@ use some form of validation and for this purpose there is a very famous open sou
 
 To get started with **Joi** open a terminal session in the root directory of your project and run this:
 
-<Highlighter language="bash">
-  {`
+```bash
 npm i joi
-  `}
-</Highlighter>
+```
 
 and require it in your project
 
-<Highlighter language="javascript">
-  {`
+```js
 const Joi = require("joi");
-  `}
-</Highlighter>
+```
 
 and create a reusable validation function, and in this function we define schema to validate the user with the validate
 method
 
-<Highlighter language="javascript">
-  {`
+```js
 // Validation Function
 const validateUser = (user) => {
   const schema = Joi.object({
-    name: Joi.string().min(3).required(),});
-return schema.validate(user)
+    name: Joi.string().min(3).required(),
+  });
+  return schema.validate(user);
 };
-`}
-
-</Highlighter>
+```
 
 now we can write our POST handler with input validation follow the [Joi Api Documentation](https://joi.dev/api/) to learn more .
 
-<Highlighter language="javascript">
-  {`
+```js
 // POST requests
 app.post("/api/users", (req, res) => {
   const { error } = validateUser(req.body);
@@ -307,8 +275,7 @@ app.post("/api/users", (req, res) => {
   users.push(user);
   res.send(user);
 });
-  `}
-</Highlighter>
+```
 
 in this example we first validate the request body and if the user is valid we push it to the array also the id is assigned automatically
 depending on how many users we have. And finally we send it back to the client.
@@ -318,8 +285,7 @@ depending on how many users we have. And finally we send it back to the client.
 To handle the put request we're going to use the same validation function to validate the user input and the handeler will
 be something like this:
 
-<Highlighter language="javascript">
-  {`
+```js
 // PUT request
 app.put("/api/users/:id", (req, res) => {
   // Lookup the user
@@ -337,8 +303,7 @@ app.put("/api/users/:id", (req, res) => {
   user.name = req.body.name;
   res.send(user);
 });
-  `}
-</Highlighter>
+```
 
 In this example first we lookup the user we want to update if dosn't exist we return "user not found " with a status code of **404**
 and in case the user exist we validate the request body and we assign the name property from the request body to the name property in the user
@@ -349,8 +314,7 @@ object and we send it back to the client.
 Finally to handle the **DELETE** request we will follow the same steps as the **POST** request and instad of pushing new object
 we delete it like this
 
-<Highlighter language="javascript">
-  {`
+```js
 app.delete("/api/users/:id", (req, res) => {
   // Lookup the user
   let user = users.find((user) => user.id === parseInt(req.params.id));
@@ -363,8 +327,7 @@ app.delete("/api/users/:id", (req, res) => {
   users.splice(userIndex, 1);
   res.send(user);
 });
-  `}
-</Highlighter>
+```
 
 ## Testing the endpoints:
 
@@ -379,40 +342,32 @@ and to use middleware function in express we use the **app.use(yourMiddleware)**
 
 Express has some usefull built-in middleware function like this one
 
-<Highlighter language="javascript">
-  {`
+```js
 app.use(express.json());
-  `}
-</Highlighter>
+```
 
 And it's used to parses incoming requests with JSON payloads and is based on [body-parser](http://expressjs.com/en/resources/middleware/body-parser.html).
 
 also you can make your own middleware functions, in the root directory of your project create a file called **customMiddleware.js**
 and require it your **index.js** and use it .
 
-<Highlighter language="javascript">
-  {`
+```js
 const customMiddleware = require("./customMiddleware");
-  `}
-</Highlighter>
+```
 
-<Highlighter language="javascript">
-  {`
+```js
 app.use(customMiddleware);
-  `}
-</Highlighter>
+```
 
 inside this custom Middleware file add this function and export it
 
-<Highlighter language="javascript">
-  {`
+```js
 function myMiddleware(req, res, next) {
   console.log("processing...");
-  next();}
+  next();
+}
 module.exports = myMiddleware;
-`}
-
-</Highlighter>
+```
 
 basically this middleware will console log "processing..." everytime an request-response cycle starts.
 

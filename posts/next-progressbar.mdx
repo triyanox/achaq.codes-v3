@@ -28,43 +28,38 @@ is slow !
 To add a progressbar to your next app you will need a package called **Next.js Progressbar**
 To install it to your application first open a terminal in your app directory and run
 
-<Highlighter language="bash">
-  {`
+```bash
 $ yarn add nextjs-progressbar
 or
 $ npm i nextjs-progressbar
-  `}
-</Highlighter>
+```
 
 ### Basic Usage :
 
 To use this package simply head back to your _\_app.js_ file and import it and add it before the
 app component like this
 
-<Highlighter language="jsx">
-  {`
-import "../styles/globals.css"
-import NextNProgress from "nextjs-progressbar"
+```jsx
+import "../styles/globals.css";
+import NextNProgress from "nextjs-progressbar";
 function MyApp({ Component, pageProps }) {
   return (
     <>
       <NextNProgress />
       <Component {...pageProps} />
     </>
-  )
+  );
 }
 export default MyApp;
-  `}
-</Highlighter>
+```
 
 ### Advanced Usage :
 
 You can overide the default config of _NextNProgress_ you can use some properties like this
 
-<Highlighter language="jsx">
-  {`
-import "../styles/globals.css"
-import NextNProgress from "nextjs-progressbar"
+```jsx
+import "../styles/globals.css";
+import NextNProgress from "nextjs-progressbar";
 function MyApp({ Component, pageProps }) {
   return (
     <>
@@ -77,10 +72,9 @@ function MyApp({ Component, pageProps }) {
       />
       <Component {...pageProps} />
     </>
-  )
+  );
 }
 export default MyApp;
-  `}
-</Highlighter>
+```
 
 and you can find more usefull use cases in the package github repo [NextNProgress](https://github.com/apal21/nextjs-progressbar)

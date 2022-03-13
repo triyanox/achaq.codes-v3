@@ -5,9 +5,9 @@ import path from "path";
 import matter from "gray-matter";
 import Image from "next/image";
 import Achaq from "../../assets/achaq.png";
-import Highlighter from "../../components/SyntaxHighlighter";
 import Imagecomponent from "../../components/ImageComponent";
 import BlogLayout from "../../themes/BlogLayout";
+import rehypeHighlight from "rehype-highlight";
 
 export const getStaticPaths = async () => {
   const files = fs.readdirSync(path.join("posts"));
@@ -36,7 +36,9 @@ export const getStaticProps = async ({ params: { slug } }: Params) => {
   );
 
   const { data: frontMatter, content } = matter(markdownWithMeta);
-  const mdxSource = await serialize(content);
+  const mdxSource = await serialize(content, {
+    mdxOptions: { rehypePlugins: [rehypeHighlight] },
+  });
 
   return {
     props: {
@@ -89,7 +91,7 @@ const PostPage: React.FC<PostProps> = ({
       link={`https://achaq.codes/blog/${link}`}
       date={new Date(date).toISOString()}
     >
-      <article className="mx-auto px-8 lg:px-2 mb-20 prose lg:prose-md dark:prose-invert">
+      <article className="mx-auto px-8 lg:px-2 mb-20 prose lg:prose-md dark:prose-invert prose-code:bg-gray-100 dark:prose-code:bg-black prose-pre:p-0 prose-pre:rounded-sm">
         <div className="flex flex-col items-start pt-28">
           <h1 className="text-2xl text-satrt text-[#6320EE] dark:text-[#FF6B6B]">
             {title}
@@ -120,10 +122,7 @@ const PostPage: React.FC<PostProps> = ({
             </div>
           </div>
         </div>
-        <MDXRemote
-          {...mdxSource}
-          components={{ Highlighter, Imagecomponent }}
-        />
+        <MDXRemote {...mdxSource} components={{ Imagecomponent }} />
       </article>
     </BlogLayout>
   );

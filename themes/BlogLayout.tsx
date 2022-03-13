@@ -1,10 +1,8 @@
 import Head from "next/head";
 import Header from "../components/Header";
 import MobileMenu from "../components/MobileMenu";
-import Background from "./Background";
 import { ThemeProvider } from "./ThemeContext";
 import { ActiveProvider } from "../components/ActiveContext";
-
 import Footer from "../components/Footer";
 import { ReactNode } from "react";
 
@@ -81,22 +79,17 @@ const BlogLayout = (props: Props) => {
           href="/favicons/favicon-16x16.png"
         />
         <link rel="manifest" href="/manifest.json" />
-        <link rel="preconnect" href="https://fonts.googleapis.com"/>
-       <link rel="preconnect" href="https://fonts.gstatic.com" />
-       <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet"/>
-        
+
         <title>{props.pageTitle}</title>
       </Head>
 
       <ThemeProvider>
-        <Background>
-          <ActiveProvider>
-            <Header />
-            {props.children}
-            <MobileMenu />
-            <Footer />
-          </ActiveProvider>
-        </Background>
+        <ActiveProvider>
+          <Header />
+          {props.children}
+          <MobileMenu />
+          <Footer />
+        </ActiveProvider>
       </ThemeProvider>
     </>
   );

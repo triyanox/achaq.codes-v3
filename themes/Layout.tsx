@@ -1,6 +1,5 @@
 import Head from "next/head";
 import Header from "../components/Header";
-import Background from "./Background";
 import { ThemeProvider } from "./ThemeContext";
 import { ActiveProvider } from "../components/ActiveContext";
 import { ParallaxProvider } from "react-scroll-parallax";
@@ -90,22 +89,17 @@ const Layout = (props: {
           href="/favicons/favicon-16x16.png"
         />
         <link rel="manifest" href="/manifest.json" />
-       <link rel="preconnect" href="https://fonts.googleapis.com"/>
-       <link rel="preconnect" href="https://fonts.gstatic.com" />
-       <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet"/>
       </Head>
 
       <ThemeProvider>
-        <Background>
-          <ActiveProvider>
-            <ParallaxProvider>
-              <Header />
-              {props.children}
-              <MobileMenu />
-              <Footer />
-            </ParallaxProvider>
-          </ActiveProvider>
-        </Background>
+        <ActiveProvider>
+          <ParallaxProvider>
+            <Header />
+            {props.children}
+            <MobileMenu />
+            <Footer />
+          </ParallaxProvider>
+        </ActiveProvider>
       </ThemeProvider>
     </>
   );

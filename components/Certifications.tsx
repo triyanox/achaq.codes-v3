@@ -34,6 +34,10 @@ const Certifications = () => {
             title="Scientific Computing with Python"
             link="https://www.freecodecamp.org/certification/achaq/scientific-computing-with-python-v7"
           />
+          <CertificationCard
+            title="Back End Development and APIs"
+            link="https://www.freecodecamp.org/certification/achaq/back-end-development-and-apis"
+          />
         </div>{" "}
       </div>
     </section>

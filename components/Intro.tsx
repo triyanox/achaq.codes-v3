@@ -15,7 +15,7 @@ const Intro = () => {
           </a>
         </Link>
       </div>
-      <div className="w-2/3 mt-12 md:mt-32 lg:mt-0 lg:w-full flex justify-center items-center">
+      <div className="w-1/2 mt-12 md:mt-32 lg:mt-0 lg:w-full flex justify-center items-center">
         <Image
           className="rounded-xl"
           src={hero}

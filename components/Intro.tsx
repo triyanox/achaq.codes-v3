@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import hero from "../assets/hero.svg";
+import hero from "../assets/achaq.png";
 import Link from "next/link";
 const Intro = () => {
   return (
@@ -17,7 +17,7 @@ const Intro = () => {
       </div>
       <div className="w-1/2 mt-12 md:mt-32 lg:mt-0 lg:w-full flex justify-center items-center">
         <Image
-          className="rounded-xl"
+          className="rounded-full"
           src={hero}
           alt="Mohamed Achaq - Full Stack Developer"
           width={400}

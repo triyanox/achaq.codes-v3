@@ -8,6 +8,8 @@ import Achaq from "../../assets/achaq.png";
 import Imagecomponent from "../../components/ImageComponent";
 import BlogLayout from "../../themes/BlogLayout";
 import rehypeHighlight from "rehype-highlight";
+import remarkGfm from "remark-gfm";
+import rehypeSlug from "rehype-slug";
 
 export const getStaticPaths = async () => {
   const files = fs.readdirSync(path.join("posts"));
@@ -38,7 +40,8 @@ export const getStaticProps = async ({ params: { slug } }: Params) => {
   const { data: frontMatter, content } = matter(markdownWithMeta);
   const mdxSource = await serialize(content, {
     mdxOptions: {
-      rehypePlugins: [rehypeHighlight],
+      remarkPlugins: [remarkGfm],
+      rehypePlugins: [rehypeSlug, rehypeHighlight],
     },
   });
 

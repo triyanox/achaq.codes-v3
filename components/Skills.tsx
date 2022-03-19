@@ -63,7 +63,7 @@ const Skills = () => {
           </div>
         </Parallax>
         <Parallax speed={10}>
-          <div className="grid grid-rows-3 justify-start items-center p-2 px-6 bg-gradient-to-br from-[#17BEBB] to-[#FF6B6B] w-full rounded-xl h-64 lg:h-96 gap-y-2">
+          <div className="grid grid-rows-3 justify-start items-center p-2 px-6 bg-gradient-to-br from-[#17BEBB] to-[#7F96FF] w-full rounded-xl h-64 lg:h-96 gap-y-2">
             <div className="flex flex-row gap-8">
               <p className="text-2xl md:text-4xl">
                 <FiServer />

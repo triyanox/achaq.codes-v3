@@ -93,12 +93,10 @@ const Layout = (props: {
 
       <ThemeProvider>
         <ActiveProvider>
-          <ParallaxProvider>
             <Header />
             {props.children}
             <MobileMenu />
             <Footer />
-          </ParallaxProvider>
         </ActiveProvider>
       </ThemeProvider>
     </>

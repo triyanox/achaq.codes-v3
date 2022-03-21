@@ -1,8 +1,8 @@
-import React from "react";
 import { MdDesignServices } from "react-icons/md";
 import { RiUser4Fill } from "react-icons/ri";
 import { BsFront } from "react-icons/bs";
 import { FiServer } from "react-icons/fi";
+
 const Skills = () => {
   return (
     <section className="flex flex-col w-full justify-center px-8 md:px-16 xl:px-12 gap-y-8 sm:mt-16 lg:mt-0 ">

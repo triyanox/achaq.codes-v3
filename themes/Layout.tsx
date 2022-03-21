@@ -2,10 +2,10 @@ import Head from "next/head";
 import Header from "../components/Header";
 import { ThemeProvider } from "./ThemeContext";
 import { ActiveProvider } from "../components/ActiveContext";
-import { ParallaxProvider } from "react-scroll-parallax";
 import MobileMenu from "../components/MobileMenu";
 import Footer from "../components/Footer";
 import { ReactNode } from "react";
+
 const Layout = (props: {
   pageTitle: string;
   siteName: string;

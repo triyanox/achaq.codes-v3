@@ -21,7 +21,6 @@ export default function CodeBlock({ children }: CodeBlockProps) {
           onClick={copy}
           className="copy hover:scale-125 transition-all duration-200"
         >
-          <span className="sr-only">Copy</span>
           <span className=" text-black dark:text-white text-2xl active:text-[#6E44FF] active:dark:text-[#EB5160] transition-all duration-200">
             <HiClipboardCopy />
           </span>

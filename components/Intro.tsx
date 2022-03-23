@@ -17,7 +17,7 @@ const Intro = () => {
           contrubuting to open source project .
         </p>
         <Link href="/contact" passHref>
-          <a className="mt-2 text-2xl text-[#6E44FF] dark:text-[#EB5160] hover:bg-gray-200 dark:hover:bg-gray-800 px-3 py-2  transition duration-200 active:scale-90 rounded-lg">
+          <a className="mt-2 text-2xl text-[#6E44FF] dark:text-[#EB5160] hover:bg-gray-200 dark:hover:bg-zinc-800 px-3 py-2  transition duration-200 active:scale-90 rounded-lg">
             Have something to say? Lets talk!
           </a>
         </Link>

@@ -4,24 +4,31 @@ import hero from "../assets/achaq.png";
 import Link from "next/link";
 const Intro = () => {
   return (
-    <section className=" w-full h-screen flex flex-col-reverse lg:flex-row justify-center items-center px-2 md:px-16 xl:px-12 gap-y-8">
-      <div className="text-black dark:text-white text-xl md:text-3xl xl:text-4xl flex flex-col justify-center items-center lg:items-start gap-y-2 w-full">
-        <h1>Hey ! My name is Mohamed Achaq.</h1>
-        <h1>I&apos;m a Full Stack Developer, </h1>
-        <h1>UI and UX designer and Artist.</h1>
+    <section className=" w-full flex flex-col-reverse lg:flex-row justify-center items-center px-10 md:px-24 xl:px-20 gap-y-8 mt-36">
+      <div className="text-black dark:text-white  flex flex-col justify-center items-start gap-y-2 w-full">
+        <h1 className="text-xl md:text-3xl">Hey ! My name is Mohamed Achaq.</h1>
+        <h2 className="text-lg md:text-2xl text-gray-700 dark:text-gray-200">
+          I&apos;m a Full Stack Developer, UI and UX designer and Artist.
+        </h2>
+        <p className="text-md text-gray-600 dark:text-gray-400">
+          I've got into coding to unleash my creativity and bring my ideas to
+          life by developing great product. My favourites programming languages
+          are Python, Javascript and Typescript and I love contrubuting to open
+          source project .
+        </p>
         <Link href="/contact" passHref>
-          <a className="mt-6 bg-gradient-to-r from-[#FF6B6B] to-[#6320EE] text-transparent bg-clip-text animate-gradient-x hover:-skew-y-3  transition duration-200 hover:scale-110 active:scale-90 hover:translate-x-5">
+          <a className="mt-2 text-2xl text-[#6E44FF] dark:text-[#EB5160] hover:-skew-y-3  transition duration-200 hover:scale-110 active:scale-90 hover:translate-x-5">
             Have something to say? Lets talk!
           </a>
         </Link>
       </div>
-      <div className="w-1/2 mt-12 md:mt-32 lg:mt-0 lg:w-full flex justify-center items-center">
+      <div className=" lg:w-full flex justify-center items-center">
         <Image
           className="rounded-full"
           src={hero}
           alt="Mohamed Achaq - Full Stack Developer"
-          width={400}
-          height={400}
+          width={300}
+          height={300}
           placeholder="blur"
         />
       </div>

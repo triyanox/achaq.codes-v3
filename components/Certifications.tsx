@@ -2,16 +2,13 @@ import CertificationCard from "./CertificationCard";
 
 const Certifications = () => {
   return (
-    <section className="flex flex-col w-full justify-center px-8 md:px-16 xl:px-12 gap-y-8 pb-8">
-      <div className="text-black dark:text-white py-8 flex flex-col justify-center items-center lg:items-start">
-        <h1 className="text-3xl bg-gradient-to-r from-[#FF6B6B] to-[#6320EE] text-transparent bg-clip-text animate-gradient-x">
-          Certifications
-        </h1>
-        <h2 className="text-xl mt-4">My online certificats </h2>
+    <section className="flex flex-col w-full justify-center px-10 md:px-24 xl:px-20 gap-y-8 mt-16">
+      <div className="text-black dark:text-white flex flex-col justify-center items-start">
+        <h1 className="text-xl md:text-2xl">My Certifications</h1>
       </div>
       <div className="w-full grid grid-cols-1 md:grid-cols-2  justify-between text-2xl gap-16">
         <div className="w-full text-black dark:text-white flex justify-center lg:justify-start">
-          <h2 className="text-xl md:text-2xl">
+          <h2 className="text-lg md:text-xl text-gray-700 dark:text-gray-200">
             I&apos;m always exited to build new projects, and during this
             process I&apos;ve managed to collect these certifications and
             experiences !

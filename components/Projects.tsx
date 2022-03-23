@@ -33,10 +33,10 @@ function Projects() {
       className=" px-4 lg:px-12 justify-center items-center  "
     >
       <div className="w-full text-black dark:text-white pt-24 text-center">
-        <h1 className="text-3xl mb-4 bg-gradient-to-r from-[#FF6B6B] to-[#6320EE] text-transparent bg-clip-text animate-gradient-x">
-          Projects
-        </h1>
-        <h2 className="text-xl">Those are my current Projects</h2>
+        <h1 className="text-3xl mb-4 text-black dark:text-white">Projects</h1>
+        <h2 className="text-xl text-gray-600 dark:text-gray-400">
+          Projects and Experiments catalog
+        </h2>
       </div>
       <motion.div initial="initial" animate="animate" exit={{ opacity: 0 }}>
         <motion.div
@@ -45,16 +45,14 @@ function Projects() {
         >
           {projectsdata.map((project) => (
             <motion.div variants={fadeInUp} key={project.id}>
-              
-                <ProjectCard
-                  id={project.id}
-                  title={project.title}
-                  description={project.description}
-                  stack={project.stack}
-                  source={project.source}
-                  preview={project.preview}
-                />
-              
+              <ProjectCard
+                id={project.id}
+                title={project.title}
+                description={project.description}
+                stack={project.stack}
+                source={project.source}
+                preview={project.preview}
+              />
             </motion.div>
           ))}
         </motion.div>

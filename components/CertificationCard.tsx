@@ -9,19 +9,19 @@ interface Props {
 
 const CertificationCard = (props: Props) => {
   return (
-    <div className="flex flex-col gap-1 items-start sm:items-center md:items-start justify-center px-4 py-2 w-full">
-      <Link href={props.link} passHref>
-        <a target="_blank">
+    <Link href={props.link} passHref>
+      <a target="_blank">
+        <div className="flex flex-col gap-1 items-start sm:items-center md:items-start justify-center px-6 py-1 w-full hover:bg-gray-200 dark:hover:bg-gray-800 text-black dark:text-white hover:text-[#6E44FF] dark:hover:text-[#EB5160] rounded-lg hover:scale-110 transition-all duration-200">
           {" "}
-          <div className="w-full flex flex-row gap-2 text-2xl  tracking-tight mb-1 text-black dark:text-white justify-start items-center hover:text-[#6320EE] hover:dark:text-[#FF6B6B]">
-            <div className=" text-[#6320EE] dark:text-[#FF6B6B]">
+          <div className="w-full flex flex-row gap-2 text-lg md:text-xl tracking-tight mb-1  justify-start items-center ">
+            <div>
               <BiCertification />
             </div>{" "}
-            {props.title}
+            <h1>{props.title}</h1>
           </div>
-        </a>
-      </Link>
-    </div>
+        </div>
+      </a>
+    </Link>
   );
 };
 

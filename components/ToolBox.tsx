@@ -21,75 +21,72 @@ import {
 } from "react-icons/si";
 const ToolBox = () => {
   return (
-    <section className="flex flex-col w-full justify-center px-8 md:px-16 xl:px-12 gap-y-8 pb-8">
-      <div className="text-black dark:text-white py-8 flex flex-col justify-center items-center lg:items-start">
-        <h1 className="text-3xl bg-gradient-to-r from-[#FF6B6B] to-[#6320EE] text-transparent bg-clip-text animate-gradient-x">
-          My Toolbox
-        </h1>
-        <h2 className="text-xl mt-4">Tools and Tecnologies I use </h2>
+    <section className="flex flex-col w-full justify-center px-10 md:px-24 xl:px-20 gap-y-8 mt-16">
+      <div className="text-black dark:text-white flex flex-col justify-center items-start">
+        <h1 className="text-xl md:text-2xl">My Toolbox</h1>
       </div>
       <div className="w-full grid grid-cols-1 lg:grid-cols-2  justify-between text-2xl gap-16">
         <div className="w-full text-black dark:text-white flex justify-center lg:justify-start">
-          <h2 className="text-xl md:text-2xl">
+          <h2 className="text-lg md:text-xl text-gray-700 dark:text-gray-200">
             In terms of tools and technologies, software developement never been
             easy than before! And those are tools and technologies I use !
           </h2>
         </div>
         <div className="mx-auto  grid grid-cols-6 md:grid-cols-9 lg:grid-cols-9 gap-8  text-black dark:text-white text-4xl">
-          <div className="text-orange-600 transition-all duration-500">
+          <div className="hover:text-orange-600 hover:scale-125 transition-all duration-150">
             <SiHtml5 />
           </div>
-          <div className="text-blue-600 transition-all duration-500">
+          <div className="hover:text-blue-600 hover:scale-125 transition-all duration-150">
             <SiCss3 />
           </div>
-          <div className="text-yellow-500 transition-all duration-500">
+          <div className="hover:text-yellow-500 hover:scale-125 transition-all duration-150">
             <SiJavascript />
           </div>
-          <div className="text-blue-700 transition-all duration-500">
+          <div className="hover:text-blue-700 hover:scale-125 transition-all duration-150">
             <SiTypescript />
           </div>
-          <div className="text-yellow-600 transition-all duration-500">
+          <div className="hover:text-yellow-600 hover:scale-125 transition-all duration-150">
             <SiPython />
           </div>
 
-          <div className="text-green-600 transition-all duration-500">
+          <div className="hover:text-green-600 hover:scale-125 transition-all duration-150">
             <SiNodedotjs />
           </div>
-          <div className="text-cyan-600 transition-all duration-500">
+          <div className="hover:text-cyan-600 hover:scale-125 transition-all duration-150">
             <SiReact />
           </div>
-          <div className="text-gray-700 transition-all duration-500">
+          <div className="hover:text-gray-700 hover:scale-125 transition-all duration-150">
             <SiNextdotjs />
           </div>
-          <div className="text-pink-600 transition-all duration-500">
+          <div className="hover:text-pink-600 hover:scale-125 transition-all duration-150">
             <SiSass />
           </div>
-          <div className="text-blue-500 transition-all duration-500">
+          <div className="hover:text-blue-500 hover:scale-125 transition-all duration-150">
             <SiTailwindcss />
           </div>
 
-          <div className="text-gray-600 transition-all duration-500">
+          <div className="hover:text-gray-600 hover:scale-125 transition-all duration-150">
             <SiExpress />
           </div>
-          <div className="text-green-600 transition-all duration-500">
+          <div className="hover:text-green-600 hover:scale-125 transition-all duration-150">
             <SiMongodb />
           </div>
-          <div className="text-rose-600 transition-all duration-500">
+          <div className="hover:text-rose-600 hover:scale-125 transition-all duration-150">
             <SiGraphql />
           </div>
-          <div className="text-yellow-600 transition-all duration-500">
+          <div className="hover:text-yellow-600 hover:scale-125 transition-all duration-150">
             <SiTensorflow />
           </div>
-          <div className="text-red-700 transition-all duration-500">
+          <div className="hover:text-red-700 hover:scale-125 transition-all duration-150">
             <SiGit />
           </div>
-          <div className="text-amber-500 transition-all duration-500">
+          <div className="hover:text-amber-500 hover:scale-125 transition-all duration-150">
             <SiFirebase />
           </div>
-          <div className="text-rose-600 transition-all duration-500">
+          <div className="hover:text-rose-600 hover:scale-125 transition-all duration-150">
             <SiAdobexd />
           </div>
-          <div className="text-blue-600 transition-all duration-500">
+          <div className="hover:text-blue-600 hover:scale-125 transition-all duration-150">
             <SiAdobephotoshop />
           </div>
         </div>

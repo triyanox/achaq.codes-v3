@@ -2,32 +2,45 @@ import Link from "next/link";
 import { useContext } from "react";
 import { ActiveContext } from "./ActiveContext";
 import Toggle from "./Toggle";
+import { useRouter } from "next/router";
+import NextLink from "next/link";
+import cn from "classnames";
+
+interface NavItems {
+  href: string;
+  text: string;
+}
+
+function NavItem({ href, text }: NavItems) {
+  const router = useRouter();
+  const isActive = router.asPath === href;
+
+  return (
+    <NextLink href={href}>
+      <a
+        className={cn(
+          isActive
+            ? "font-semibold text-[#6E44FF] dark:text-[#EB5160]"
+            : "font-normal text-black dark:text-white",
+          "hidden md:inline-block p-1 sm:px-3 sm:py-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-800 transition-all"
+        )}
+      >
+        <span className="capsize">{text}</span>
+      </a>
+    </NextLink>
+  );
+}
+
 function Header() {
   const { active, setActive } = useContext(ActiveContext);
   return (
-    <section className=" mt-0 fixed h-12 w-full z-50 top-0  ">
-      <nav className=" bg-white dark:bg-black  py-3  flex items-center justify-between flex-row mx-4 md:mx-8 lg:mx-6 mt-3 px-4 rounded-full firefox:bg-opacity-70 firefox:dark:bg-opacity-70 bg-opacity-40 dark:bg-opacity-40 backdrop-blur-2xl">
-        <div className=" w-full lg:inline-flex  hidden lg:visible text-xl">
-          <Link href="/">
-            <a className="lg:inline-flex lg:w-auto w-full px-3 pb-8 lg:pb-0  text-black dark:text-white    items-center justify-center active:scale-90 duration-500">
-              Home
-            </a>
-          </Link>
-          <Link href="/projects">
-            <a className="lg:inline-flex lg:w-auto w-full px-3 pb-8 lg:pb-0  text-black dark:text-white    items-center justify-center active:scale-90 duration-500">
-              Projects
-            </a>
-          </Link>
-          <Link href="/contact">
-            <a className="lg:inline-flex lg:w-auto w-full px-3 pb-8  lg:pb-0  text-black dark:text-white  items-center justify-center active:scale-90 duration-500">
-              Contact
-            </a>
-          </Link>
-          <Link href="/blog">
-            <a className="lg:inline-flex lg:w-auto w-full px-3 pb-8  lg:pb-0  text-black dark:text-white  items-center justify-center active:scale-90 duration-500">
-              Blog
-            </a>
-          </Link>
+    <section className="fixed flex top-0 h-16 items-center py-2 w-full bg-white dark:bg-black px-10 md:px-24 xl:px-20">
+      <nav className=" w-full  flex items-center justify-between flex-row ">
+        <div className=" w-full lg:inline-flex  hidden lg:visible text-xl ">
+          <NavItem href="/" text="Home" />
+          <NavItem href="/projects" text="Projects" />
+          <NavItem href="/contact" text="Contact" />
+          <NavItem href="/blog" text="Blog" />
         </div>
         <button
           aria-label="Menu Switch"

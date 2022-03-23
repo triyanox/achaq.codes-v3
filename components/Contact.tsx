@@ -26,35 +26,34 @@ function ContactForm() {
       className=" h-screen px-4 lg:px-12 justify-center items-center "
     >
       <div className="w-full text-black dark:text-white pt-24 text-center">
-        <h1 className="text-3xl mb-4 bg-gradient-to-r from-[#FF6B6B] to-[#6320EE] text-transparent bg-clip-text animate-gradient-x">
-          Contact
-        </h1>
-        <h2 className="text-xl">Get in touch with me !</h2>
+        <h1 className="text-3xl mb-4 text-black dark:text-white">Contact</h1>
+        <h2 className="text-xl text-gray-600 dark:text-gray-400">
+          Get in Touch
+        </h2>
       </div>
       <div className="flex flex-col justify-center items-center mt-16 px-auto">
-        
         <div className="mt-8  flex  flex-col items-center justify-center gap-4 ">
-          <div className="select-none w-80 text-2xl p-5 h-12  text-black   dark:text-white focus:outline-none focus:shadow-outline   rounded-md border-2  border-[#6320EE] dark:border-[#FF6B6B] broder flex justify-center items-center">
+          <div className="select-none w-80 text-2xl p-6 rounded-lg shadow-md hover:scale-110 transition-all duration-200 h-12  text-white   dark:text-black  bg-[#6E44FF] dark:bg-[#EB5160] broder flex justify-center items-center">
             motriyanox@gmail.com
           </div>
 
           <div
             aria-label="copy"
             onClick={handleCopy}
-            className="text-black dark:text-white py-3 px-6 cursor-pointer transition-all duration-500 active:scale-90  text-lg flex flex-row gap-2 items-center hover:text-[#6320EE] hover:dark:text-[#FF6B6B]"
+            className="hover:scale-110 hover:bg-gray-200 dark:hover:bg-gray-800 rounded-lg p-1 text-black dark:text-white py-3 px-6 cursor-pointer transition-all duration-500 active:scale-90  text-lg flex flex-row gap-2 items-center hover:text-[#6320EE] hover:dark:text-[#FF6B6B]"
           >
             <BiCopy />
             <p>Copy My Email</p>
           </div>
         </div>
-        <div className=" flex justify-start items-center flex-col mt-16 ">
+        <div className=" flex justify-start items-center flex-col mt-8 ">
           <h3 className="text-black dark:text-white mb-2 text-center text-xl">
             And other ways to get in touch with me !
           </h3>
           <div className="mt-8 flex flex-row justify-center items-center gap-4">
             <Link href="https://www.linkedin.com/in/achaqdev/" passHref>
               <a target="_blank">
-                <h1 className="text-black dark:text-white text-2xl text-blue-600 dark:text-blue-600 ">
+                <h1 className="text-black dark:text-white hover:scale-125 transition-all duration-200 text-3xl hover:text-blue-600 hover:dark:text-blue-600 ">
                   <SiLinkedin />
                 </h1>
               </a>
@@ -62,7 +61,7 @@ function ContactForm() {
 
             <Link href="https://twitter.com/ac__haq" passHref>
               <a target="_blank">
-                <h1 className="text-black dark:text-white text-2xl text-blue-500 dark:text-blue-500">
+                <h1 className="text-black dark:text-white hover:scale-125 transition-all duration-200 text-3xl hover:text-blue-500 hover:dark:text-blue-500">
                   <SiTwitter />
                 </h1>
               </a>
@@ -70,7 +69,7 @@ function ContactForm() {
 
             <Link href="https://instagram.com/ac.haq/" passHref>
               <a target="_blank">
-                <h1 className="text-black dark:text-white text-2xl text-pink-700 dark:text-pink-700">
+                <h1 className="text-black dark:text-white hover:scale-125 transition-all duration-200 text-3xl hover:text-pink-700 hover:dark:text-pink-700">
                   <SiInstagram />
                 </h1>
               </a>

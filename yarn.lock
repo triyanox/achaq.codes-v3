@@ -542,11 +542,6 @@ balanced-match@^1.0.0:
   resolved "https://registry.npmjs.org/balanced-match/-/balanced-match-1.0.2.tgz"
   integrity sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==
 
-bezier-easing@^2.1.0:
-  version "2.1.0"
-  resolved "https://registry.npmjs.org/bezier-easing/-/bezier-easing-2.1.0.tgz"
-  integrity sha1-wE3+i5JtbsrKGBPWn/F5t8ICXYY=
-
 binary-extensions@^2.0.0:
   version "2.2.0"
   resolved "https://registry.npmjs.org/binary-extensions/-/binary-extensions-2.2.0.tgz"
@@ -657,6 +652,11 @@ chokidar@^3.5.3:
     readdirp "~3.6.0"
   optionalDependencies:
     fsevents "~2.3.2"
+
+classnames@^2.3.1:
+  version "2.3.1"
+  resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.3.1.tgz#dfcfa3891e306ec1dad105d0e88f4417b8535e8e"
+  integrity sha512-OlQdbZ7gLfGarSqxesMesDa5uz7KFbID8Kpq/SxIoNGDqY8lSYs0D+hhtBXhcdB3rcbXArFr7vlHheLk1voeNA==
 
 color-convert@^1.9.0:
   version "1.9.3"
@@ -2603,13 +2603,6 @@ p-try@^1.0.0:
   resolved "https://registry.npmjs.org/p-try/-/p-try-1.0.0.tgz"
   integrity sha1-y8ec26+P1CKOE/Yh8rGiN8GyB7M=
 
-parallax-controller@^1.3.4:
-  version "1.3.4"
-  resolved "https://registry.npmjs.org/parallax-controller/-/parallax-controller-1.3.4.tgz"
-  integrity sha512-rcrRQ+u/houINYaa5EGpuw5kIhoFIAg/eQRN8Ia10sZN8Uo+568X/hdGpdbumReJf2TBd/fka9UFZbGkGTHhLg==
-  dependencies:
-    bezier-easing "^2.1.0"
-
 parent-module@^1.0.0:
   version "1.0.1"
   resolved "https://registry.npmjs.org/parent-module/-/parent-module-1.0.1.tgz"
@@ -2804,13 +2797,6 @@ react-is@^16.13.1:
   version "16.13.1"
   resolved "https://registry.npmjs.org/react-is/-/react-is-16.13.1.tgz"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
-
-react-scroll-parallax@^3.0.4:
-  version "3.0.4"
-  resolved "https://registry.npmjs.org/react-scroll-parallax/-/react-scroll-parallax-3.0.4.tgz"
-  integrity sha512-afVibxTLBl/CnDCXVSTmQ2JneB2oI1THZw4goePQb+6gvAI+n4AKup7XEdbg90i19g9fbMUcfsN0uMAWiTG+Rg==
-  dependencies:
-    parallax-controller "^1.3.4"
 
 react@17.0.2:
   version "17.0.2"

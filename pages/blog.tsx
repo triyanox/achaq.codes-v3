@@ -34,10 +34,10 @@ const Blog: NextPage<PostsProps> = ({ posts }) => {
         className=" h-screen px-12 justify-center items-center "
       >
         <div className="w-full text-black dark:text-white pt-24 text-center">
-          <h1 className="text-3xl mb-4 bg-gradient-to-r from-[#FF6B6B] to-[#6320EE] text-transparent bg-clip-text animate-gradient-x">
-            Blog
-          </h1>
-          <h2 className="text-xl">Check out my blog post !</h2>
+          <h1 className="text-3xl mb-4 text-black dark:text-white">Blog</h1>
+          <h2 className="text-xl text-gray-600 dark:text-gray-400">
+            Check out my latest blog posts
+          </h2>
         </div>
         <div className=" flex justify-start items-center flex-col  ">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-4 lg:gap-4 md:mx-4 lg:mx-8 mt-8 justify-center items-start  ">

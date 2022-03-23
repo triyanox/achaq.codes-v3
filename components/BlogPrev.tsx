@@ -7,15 +7,14 @@ interface Props {
 }
 const BlogPrev = (props: Props) => {
   return (
-    <div className="relative flex w-full h-40 md:h-56 justify-center flex-col hover:border border-[#6320EE] dark:border-[#FF6B6B] active:scale-90 transition-all duration-100 rounded-xl p-2">
+    <div className="relative flex w-full h-40 md:h-56 justify-center flex-col  active:scale-90 p-2 hover:bg-gray-200 dark:hover:bg-gray-900 rounded-lg shadow-sm  hover:scale-110 transition-all duration-300">
       <div className="flex flex-col gap-2 p-2">
-        
-        <h1 className="text-xl md:text-2xl  tracking-tight text-[#6320EE] dark:text-[#FF6B6B] mb-2">
+        <h1 className="text-xl md:text-2xl text-black dark:text-white font-semibold mb-2">
           {props.title}
         </h1>
         <div className="flex flex-row justify-between mb-2 ">
-          <div className="text-xs text-black dark:text-white">{props.date}</div>
-          <div className="text-xs text-black dark:text-white">
+          <div className="text-sm text-black dark:text-white">{props.date}</div>
+          <div className="text-sm text-black dark:text-white">
             {props.readTime + " min read"}
           </div>
         </div>

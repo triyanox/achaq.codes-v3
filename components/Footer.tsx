@@ -9,7 +9,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <section className=" flex flex-col items-center md:flex-row  justify-center mt-8 p-12">
+    <section className=" flex flex-col items-center md:flex-row  justify-center mt-8 px-10 md:px-24 xl:px-20 p-12">
       <div className="md:w-full flex items-center sm:flex-row flex-col">
         <div className="flex text-2xl text-black dark:text-white font-medium items-center md:justify-start justify-center">
           Achaq Codes

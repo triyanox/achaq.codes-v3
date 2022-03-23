@@ -5,11 +5,17 @@ import path from "path";
 import matter from "gray-matter";
 import Image from "next/image";
 import Achaq from "../../assets/achaq.png";
-import Imagecomponent from "../../components/ImageComponent";
 import BlogLayout from "../../themes/BlogLayout";
 import rehypeHighlight from "rehype-highlight";
 import remarkGfm from "remark-gfm";
 import rehypeSlug from "rehype-slug";
+import Imagecomponent from "../../components/ImageComponent";
+import CodeBlock from "../../components/CodeBlock";
+
+const components = {
+  pre: CodeBlock,
+  Imagecomponent,
+};
 
 export const getStaticPaths = async () => {
   const files = fs.readdirSync(path.join("posts"));
@@ -127,7 +133,7 @@ const PostPage: React.FC<PostProps> = ({
             </div>
           </div>
         </div>
-        <MDXRemote {...mdxSource} components={{ Imagecomponent }} />
+        <MDXRemote {...mdxSource} components={components as any} />
       </article>
     </BlogLayout>
   );

@@ -5,7 +5,6 @@ import { ThemeProvider } from "./ThemeContext";
 import { ActiveProvider } from "../components/ActiveContext";
 import Footer from "../components/Footer";
 import { ReactNode } from "react";
-
 interface Props {
   pageTitle: string;
   siteName: string;

@@ -34,7 +34,7 @@ function NavItem({ href, text }: NavItems) {
 function Header() {
   const { active, setActive } = useContext(ActiveContext);
   return (
-    <section className="fixed flex top-0 h-16 items-center py-2 w-full bg-white dark:bg-black px-10 md:px-24 xl:px-20">
+    <section className="fixed flex top-0 h-16 items-center py-2 w-full bg-white dark:bg-black px-10 md:px-24 xl:px-20 z-50">
       <nav className=" w-full  flex items-center justify-between flex-row ">
         <div className=" w-full lg:inline-flex  hidden lg:visible text-xl ">
           <NavItem href="/" text="Home" />

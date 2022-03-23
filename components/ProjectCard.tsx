@@ -14,7 +14,7 @@ interface Props {
 
 const ProjectCard = (props: Props) => {
   return (
-    <div className="flex w-full flex-col gap-4 h-48 justify-center p-8 hover:bg-gray-200 dark:hover:bg-zinc-800 rounded-lg shadow-sm  hover:scale-110 transition-all duration-300">
+    <div className="flex w-full flex-col gap-4 h-48 justify-center p-8 hover:bg-gray-200 dark:hover:bg-zinc-900 rounded-lg shadow-sm  hover:scale-110 transition-all duration-300">
       <div className="grid grid-cols-2 justify-between items-start mt-2">
         <div className="text-2xl text-[#6E44FF] dark:text-[#EB5160]">
           <BsFolderFill />

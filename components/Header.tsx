@@ -22,7 +22,7 @@ function NavItem({ href, text }: NavItems) {
           isActive
             ? "font-semibold text-[#6E44FF] dark:text-[#EB5160]"
             : "font-normal text-black dark:text-white",
-          "hidden md:inline-block p-1 sm:px-3 sm:py-2 rounded-lg hover:bg-gray-200 dark:hover:bg-zinc-900 transition-all"
+          "hidden md:inline-block p-1 sm:px-3 sm:py-2 rounded-lg hover:bg-gray-200 dark:hover:bg-zinc-800 transition-all"
         )}
       >
         <span className="capsize">{text}</span>

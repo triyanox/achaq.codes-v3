@@ -102,7 +102,7 @@ const PostPage: React.FC<PostProps> = ({
       link={`https://achaq.codes/blog/${link}`}
       date={new Date(date).toISOString()}
     >
-      <article className="mx-auto px-8 lg:px-2 mb-20 prose prose-md lg:prose-lg dark:prose-invert prose-pre:bg-gray-200 dark:prose-pre:bg-zinc-900 prose-pre:shadow-md prose-pre:border prose-pre:border-gray-200 dark:prose-pre:border-zinc-900 prose-pre:rounded-xl prose-code:rounded-lg">
+      <article className="mx-auto px-8 lg:px-2 mb-20 prose prose-md lg:prose-lg dark:prose-invert prose-pre:bg-gray-200 dark:prose-pre:bg-zinc-800 prose-pre:shadow-md prose-pre:border prose-pre:border-gray-200 dark:prose-pre:border-zinc-800 prose-pre:rounded-xl prose-code:rounded-lg">
         <div className="flex flex-col items-start pt-28">
           <h1 className="text-xl md:text-2xl text-black dark:text-white font-semibold">
             {title}

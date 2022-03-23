@@ -7,7 +7,7 @@ interface Props {
 }
 const BlogPrev = (props: Props) => {
   return (
-    <div className="relative flex w-full h-40 md:h-56 justify-center flex-col  active:scale-90 p-2 hover:bg-gray-200 dark:hover:bg-gray-900 rounded-lg shadow-sm  hover:scale-110 transition-all duration-300">
+    <div className="relative flex w-full h-40 md:h-56 justify-center flex-col  active:scale-90 p-2 hover:bg-gray-200 dark:hover:bg-zinc-800 rounded-lg shadow-sm  hover:scale-110 transition-all duration-300">
       <div className="flex flex-col gap-2 p-2">
         <h1 className="text-xl md:text-2xl text-black dark:text-white font-semibold mb-2">
           {props.title}

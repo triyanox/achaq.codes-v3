@@ -11,10 +11,10 @@ const Intro = () => {
           I&apos;m a Full Stack Developer, UI and UX designer and Artist.
         </h2>
         <p className="text-md text-gray-600 dark:text-gray-400">
-          I've got into coding to unleash my creativity and bring my ideas to
-          life by developing great product. My favourites programming languages
-          are Python, Javascript and Typescript and I love contrubuting to open
-          source project .
+          I&apos;ve got into coding to unleash my creativity and bring my ideas
+          to life by developing great product. My favourites programming
+          languages are Python, Javascript and Typescript and I love
+          contrubuting to open source project .
         </p>
         <Link href="/contact" passHref>
           <a className="mt-2 text-2xl text-[#6E44FF] dark:text-[#EB5160] hover:-skew-y-3  transition duration-200 hover:scale-110 active:scale-90 hover:translate-x-5">

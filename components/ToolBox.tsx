@@ -74,13 +74,13 @@ const ToolBox = () => {
           <div className="hover:text-rose-600 hover:scale-125 transition-all duration-150">
             <SiGraphql />
           </div>
-          <div className="hover:text-amber-400 hover:scale-125 transition-all duration-150">
+          <div className="hover:text-amber-600 hover:scale-125 transition-all duration-150">
             <SiTensorflow />
           </div>
           <div className="hover:text-red-700 hover:scale-125 transition-all duration-150">
             <SiGit />
           </div>
-          <div className="hover:text-amber-600 hover:scale-125 transition-all duration-150">
+          <div className="hover:text-amber-400 hover:scale-125 transition-all duration-150">
             <SiFirebase />
           </div>
           <div className="hover:text-rose-700 hover:scale-125 transition-all duration-150">

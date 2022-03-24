@@ -1,6 +1,5 @@
 import Head from "next/head";
 import Header from "../components/Header";
-import { ThemeProvider } from "./ThemeContext";
 import { ActiveProvider } from "../components/ActiveContext";
 import MobileMenu from "../components/MobileMenu";
 import Footer from "../components/Footer";
@@ -91,14 +90,12 @@ const Layout = (props: {
         <link rel="manifest" href="/manifest.json" />
       </Head>
 
-      <ThemeProvider>
-        <ActiveProvider>
-            <Header />
-            {props.children}
-            <MobileMenu />
-            <Footer />
-        </ActiveProvider>
-      </ThemeProvider>
+      <ActiveProvider>
+        <Header />
+        {props.children}
+        <MobileMenu />
+        <Footer />
+      </ActiveProvider>
     </>
   );
 };

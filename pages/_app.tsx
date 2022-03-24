@@ -1,13 +1,13 @@
 import "../styles/globals.css";
 import type { AppProps } from "next/app";
-import { Fragment } from "react";
 import NextNProgress from "nextjs-progressbar";
 import "../styles/hljs.css";
 import { motion } from "framer-motion";
+import { ThemeProvider } from "next-themes";
 
 function MyApp({ Component, pageProps, router }: AppProps) {
   return (
-    <Fragment>
+    <ThemeProvider attribute="class">
       <NextNProgress height={2} color="#6320EE" />
       <motion.div
         key={router.route}
@@ -25,7 +25,7 @@ function MyApp({ Component, pageProps, router }: AppProps) {
       >
         <Component {...pageProps} />
       </motion.div>
-    </Fragment>
+    </ThemeProvider>
   );
 }
 

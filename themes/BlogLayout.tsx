@@ -1,7 +1,6 @@
 import Head from "next/head";
 import Header from "../components/Header";
 import MobileMenu from "../components/MobileMenu";
-import { ThemeProvider } from "./ThemeContext";
 import { ActiveProvider } from "../components/ActiveContext";
 import Footer from "../components/Footer";
 import { ReactNode } from "react";
@@ -82,14 +81,12 @@ const BlogLayout = (props: Props) => {
         <title>{props.pageTitle}</title>
       </Head>
 
-      <ThemeProvider>
-        <ActiveProvider>
-          <Header />
-          {props.children}
-          <MobileMenu />
-          <Footer />
-        </ActiveProvider>
-      </ThemeProvider>
+      <ActiveProvider>
+        <Header />
+        {props.children}
+        <MobileMenu />
+        <Footer />
+      </ActiveProvider>
     </>
   );
 };

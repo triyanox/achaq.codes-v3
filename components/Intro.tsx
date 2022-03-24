@@ -14,7 +14,7 @@ const Intro = () => {
           I&apos;ve got into coding to unleash my creativity and bring my ideas
           to life by developing great product. My favourites programming
           languages are Python, Javascript and Typescript and I love
-          contrubuting to open source project .
+          contrubuting to open source projects .
         </p>
         <Link href="/contact" passHref>
           <a className="mt-2 text-2xl text-[#6E44FF] dark:text-[#EB5160] hover:bg-gray-200 dark:hover:bg-zinc-800 px-3 py-2  transition duration-200 active:scale-90 rounded-lg">

@@ -15,7 +15,7 @@ const SkillCard = (props: Props) => {
           <p className="text-xl md:text-3xl">{props.icon}</p>
           <h1 className="text-xl lg:text-2xl">{props.title}</h1>
         </div>
-        <h2 className="text-md mt-2">{props.description}</h2>
+        <h2 className="text-md mt-2 text-gray-700 dark:text-gray-200">{props.description}</h2>
       </div>
     </div>
   );

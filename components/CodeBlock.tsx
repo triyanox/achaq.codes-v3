@@ -28,12 +28,12 @@ export default function CodeBlock({ children }: CodeBlockProps) {
           className="copy hover:scale-125 transition-all duration-200"
         >
           {isCopied ? (
-            <span className=" text-black dark:text-white text-2xl active:text-[#6E44FF] active:dark:text-[#EB5160] transition-all duration-200">
-              <HiClipboardCopy />
-            </span>
-          ) : (
             <span className=" text-green-600 dark:text-green-500 text-2xl active:text-[#6E44FF] active:dark:text-[#EB5160] transition-all duration-200">
               <BsCheck2Circle />
+            </span>
+          ) : (
+            <span className=" text-black dark:text-white text-2xl active:text-[#6E44FF] active:dark:text-[#EB5160] transition-all duration-200">
+              <HiClipboardCopy />
             </span>
           )}
         </button>

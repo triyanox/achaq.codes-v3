@@ -1,4 +1,5 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
+import { BsCheck2Circle } from "react-icons/bs";
 import { HiClipboardCopy } from "react-icons/hi";
 interface CodeBlockProps {
   children: React.ReactNode;
@@ -6,10 +7,13 @@ interface CodeBlockProps {
 
 export default function CodeBlock({ children }: CodeBlockProps) {
   const preRef = useRef<HTMLPreElement>(null);
+  const [isCopied, setIsCopied] = useState<boolean>(false);
 
   function copy() {
     const content = preRef.current?.textContent ?? "";
     navigator.clipboard.writeText(content);
+    setIsCopied(true);
+    setTimeout(() => setIsCopied(false), 2000);
   }
 
   return (
@@ -21,9 +25,15 @@ export default function CodeBlock({ children }: CodeBlockProps) {
           onClick={copy}
           className="copy hover:scale-125 transition-all duration-200"
         >
-          <span className=" text-black dark:text-white text-2xl active:text-[#6E44FF] active:dark:text-[#EB5160] transition-all duration-200">
-            <HiClipboardCopy />
-          </span>
+          {isCopied ? (
+            <span className=" text-black dark:text-white text-2xl active:text-[#6E44FF] active:dark:text-[#EB5160] transition-all duration-200">
+              <HiClipboardCopy />
+            </span>
+          ) : (
+            <span className=" text-green-600 dark:text-green-500 text-2xl active:text-[#6E44FF] active:dark:text-[#EB5160] transition-all duration-200">
+              <BsCheck2Circle />
+            </span>
+          )}
         </button>
       </pre>
 

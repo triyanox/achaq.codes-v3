@@ -24,7 +24,7 @@ const Intro = () => {
       </div>
       <div className=" lg:w-full flex justify-center items-center">
         <Image
-          className="rounded-lg"
+          className="rounded-xl"
           src={hero}
           alt="Mohamed Achaq - Full Stack Developer"
           width={350}

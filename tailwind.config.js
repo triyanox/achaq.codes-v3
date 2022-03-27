@@ -11,7 +11,7 @@ module.exports = {
   theme: {
     extend: {
        fontFamily: {
-        sans: ['Dosis', ...defaultTheme.fontFamily.sans],
+        sans: ['Poppins', ...defaultTheme.fontFamily.sans],
       },
       animation: {
         "gradient-x": "gradient-x 3s ease infinite",

@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import hero from "../assets/achaq.png";
+import hero from "../assets/hero.svg";
 import Link from "next/link";
 const Intro = () => {
   return (

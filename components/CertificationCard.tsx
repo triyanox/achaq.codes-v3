@@ -11,9 +11,9 @@ const CertificationCard = (props: Props) => {
   return (
     <Link href={props.link} passHref>
       <a target="_blank">
-        <div className="flex flex-col gap-1 items-start sm:items-center md:items-start justify-center px-2 md:px-6 py-1 w-full text-black dark:text-white rounded-lg hover:bg-gradient-to-r from-[#6E44FF]  to-[#6EE7B7] dark:from-[#EB5160] dark:to-[#3B82F6] animate-gradient-x hover:shadow-xl dark:shadow-[#EB5160]">
+        <div className="flex flex-col gap-1 items-start sm:items-center md:items-start justify-center px-2 md:px-6 py-1 w-full hover:bg-gray-200 dark:hover:bg-zinc-800 text-black dark:text-white hover:text-[#6E44FF] dark:hover:text-[#EB5160] rounded-lg hover:scale-110 transition-all duration-200">
           {" "}
-          <div className="w-full flex flex-row gap-2 text-lg md:text-xl tracking-tight mb-1  justify-start items-center bg-opacity-70 dark:bg-opacity-70 backdrop-filter backdrop-blur-xl dark:backdrop-blur-xl">
+          <div className="w-full flex flex-row gap-2 text-lg md:text-xl tracking-tight mb-1  justify-start items-center">
             <div>
               <BiCertification />
             </div>{" "}

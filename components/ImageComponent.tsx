@@ -10,7 +10,7 @@ interface Props {
 function Imagecomponent(props: Props) {
   return (
     <Image
-      className="rounded-lg"
+      className="rounded-2xl"
       src={props.src}
       alt={props.alt}
       width={props.width}

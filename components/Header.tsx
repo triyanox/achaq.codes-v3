@@ -5,7 +5,8 @@ import Toggle from "./Toggle";
 import { useRouter } from "next/router";
 import NextLink from "next/link";
 import cn from "classnames";
-
+import { HiOutlineMenuAlt4 } from "react-icons/hi";
+import { CgClose } from "react-icons/cg";
 interface NavItems {
   href: string;
   text: string;
@@ -34,7 +35,7 @@ function NavItem({ href, text }: NavItems) {
 function Header() {
   const { active, setActive } = useContext(ActiveContext);
   return (
-    <section className="fixed flex top-0 h-16 items-center py-2 w-full bg-white dark:bg-black px-8 md:px-24 xl:px-20 z-50">
+    <section className="fixed flex top-0 h-16 items-center py-2 w-full bg-white dark:bg-black px-8 md:px-24 xl:px-20 z-50 bg-opacity-40 dark:bg-opacity-40 backdrop-filter backdrop-blur-xl">
       <nav className=" w-full  flex items-center justify-between flex-row ">
         <div className=" w-full lg:inline-flex  hidden lg:visible text-xl ">
           <NavItem href="/" text="Home" />
@@ -45,39 +46,9 @@ function Header() {
         <button
           aria-label="Menu Switch"
           onClick={() => setActive(active === false ? true : false)}
-          className="visible lg:hidden text-black dark:text-white "
+          className="visible lg:hidden text-black dark:text-white text-2xl"
         >
-          {!active ? (
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6 active:rotate-90 transition-all duration-500"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M4 8h16M4 16h16"
-              />
-            </svg>
-          ) : (
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6 active:rotate-90 transition-all duration-500"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M6 18L18 6M6 6l12 12"
-              />
-            </svg>
-          )}
+          {!active ? <HiOutlineMenuAlt4 /> : <CgClose />}
         </button>
         <Toggle />
       </nav>

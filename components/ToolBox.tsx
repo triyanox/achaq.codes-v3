@@ -36,7 +36,7 @@ const ToolBox = () => {
           <div className="hover:text-orange-600 hover:scale-125 transition-all duration-150 group">
             <SiHtml5 />
             <span
-              className="absolute w-auto p-2 m-2 min-w-max -right-8 rounded-md shadow-md
+              className="absolute w-auto p-2 m-2 min-w-max -right-6 rounded-md shadow-md
                     text-white bg-black  dark:bg-white dark:text-black 
     text-xs font-bold 
     transition-all duration-100 scale-0 origin-top group-hover:scale-100"
@@ -47,7 +47,7 @@ const ToolBox = () => {
           <div className="hover:text-blue-600 hover:scale-125 transition-all duration-150 group">
             <SiCss3 />
             <span
-              className="absolute w-auto p-2 m-2 min-w-max -right-8 rounded-md shadow-md
+              className="absolute w-auto p-2 m-2 min-w-max -right-6 rounded-md shadow-md
                     text-white bg-black  dark:bg-white dark:text-black 
     text-xs font-bold 
     transition-all duration-100 scale-0 origin-top group-hover:scale-100"
@@ -80,7 +80,7 @@ const ToolBox = () => {
           <div className="hover:text-blue-700 hover:scale-125 transition-all duration-150 group">
             <SiPython />
             <span
-              className="absolute w-auto p-2 m-2 min-w-max -right-8 rounded-md shadow-md
+              className="absolute w-auto p-2 m-2 min-w-max -right-6 rounded-md shadow-md
                     text-white bg-black  dark:bg-white dark:text-black 
     text-xs font-bold 
     transition-all duration-100 scale-0 origin-top group-hover:scale-100"
@@ -92,7 +92,7 @@ const ToolBox = () => {
           <div className="hover:text-green-600 hover:scale-125 transition-all duration-150 group">
             <SiNodedotjs />
             <span
-              className="absolute w-auto p-2 m-2 min-w-max -right-8 rounded-md shadow-md
+              className="absolute w-auto p-2 m-2 min-w-max -right-6 rounded-md shadow-md
                     text-white bg-black  dark:bg-white dark:text-black 
     text-xs font-bold 
     transition-all duration-100 scale-0 origin-top group-hover:scale-100"
@@ -103,7 +103,7 @@ const ToolBox = () => {
           <div className="hover:text-cyan-600 hover:scale-125 transition-all duration-150 group">
             <SiReact />
             <span
-              className="absolute w-auto p-2 m-2 min-w-max -right-8 rounded-md shadow-md
+              className="absolute w-auto p-2 m-2 min-w-max -right-5 rounded-md shadow-md
                     text-white bg-black  dark:bg-white dark:text-black 
     text-xs font-bold 
     transition-all duration-100 scale-0 origin-top group-hover:scale-100"
@@ -114,7 +114,7 @@ const ToolBox = () => {
           <div className="hover:text-gray-700 hover:scale-125 transition-all duration-150 group">
             <SiNextdotjs />
             <span
-              className="absolute w-auto p-2 m-2 min-w-max -right-8 rounded-md shadow-md
+              className="absolute w-auto p-2 m-2 min-w-max -right-5 rounded-md shadow-md
                     text-white bg-black  dark:bg-white dark:text-black 
     text-xs font-bold 
     transition-all duration-100 scale-0 origin-top group-hover:scale-100"
@@ -125,7 +125,7 @@ const ToolBox = () => {
           <div className="hover:text-pink-600 hover:scale-125 transition-all duration-150 group">
             <SiSass />
             <span
-              className="absolute w-auto p-2 m-2 min-w-max -right-8 rounded-md shadow-md
+              className="absolute w-auto p-2 m-2 min-w-max -right-4 rounded-md shadow-md
                     text-white bg-black  dark:bg-white dark:text-black 
     text-xs font-bold 
     transition-all duration-100 scale-0 origin-top group-hover:scale-100"
@@ -136,7 +136,7 @@ const ToolBox = () => {
           <div className="hover:text-blue-500 hover:scale-125 transition-all duration-150 group">
             <SiTailwindcss />
             <span
-              className="absolute w-auto p-2 m-2 min-w-max -right-8 rounded-md shadow-md
+              className="absolute w-auto p-2 m-2 min-w-max -right-10 rounded-md shadow-md
                     text-white bg-black  dark:bg-white dark:text-black 
     text-xs font-bold 
     transition-all duration-100 scale-0 origin-top group-hover:scale-100"
@@ -148,7 +148,7 @@ const ToolBox = () => {
           <div className="hover:text-gray-600 hover:scale-125 transition-all duration-150 group">
             <SiExpress />
             <span
-              className="absolute w-auto p-2 m-2 min-w-max -right-8 rounded-md shadow-md
+              className="absolute w-auto p-2 m-2 min-w-max -right-6 rounded-md shadow-md
                     text-white bg-black  dark:bg-white dark:text-black 
     text-xs font-bold 
     transition-all duration-100 scale-0 origin-top group-hover:scale-100"
@@ -192,7 +192,7 @@ const ToolBox = () => {
           <div className="hover:text-red-700 hover:scale-125 transition-all duration-150 group">
             <SiGit />
             <span
-              className="absolute w-auto p-2 m-2 min-w-max -right-8 rounded-md shadow-md
+              className="absolute w-auto p-2 m-2 min-w-max -right-3 rounded-md shadow-md
                     text-white bg-black  dark:bg-white dark:text-black 
     text-xs font-bold 
     transition-all duration-100 scale-0 origin-top group-hover:scale-100"
@@ -203,7 +203,7 @@ const ToolBox = () => {
           <div className="hover:text-amber-400 hover:scale-125 transition-all duration-150 group">
             <SiFirebase />
             <span
-              className="absolute w-auto p-2 m-2 min-w-max -right-8 rounded-md shadow-md
+              className="absolute w-auto p-2 m-2 min-w-max -right-7 rounded-md shadow-md
                     text-white bg-black  dark:bg-white dark:text-black 
     text-xs font-bold 
     transition-all duration-100 scale-0 origin-top group-hover:scale-100"
@@ -225,7 +225,7 @@ const ToolBox = () => {
           <div className="hover:text-blue-800 hover:scale-125 transition-all duration-150 group">
             <SiAdobephotoshop />
             <span
-              className="absolute w-auto p-2 m-2 min-w-max -right-8 rounded-md shadow-md
+              className="absolute w-auto p-2 m-2 min-w-max -right-14 rounded-md shadow-md
                     text-white bg-black  dark:bg-white dark:text-black 
     text-xs font-bold 
     transition-all duration-100 scale-0 origin-top group-hover:scale-100"

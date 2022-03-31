@@ -29,7 +29,7 @@ const ProjectCard = (props: Props) => {
                 >
                   <SiGithub />
                   <span
-                    className="absolute w-auto p-2 m-2 min-w-max -right-8 rounded-md shadow-md
+                    className="absolute w-auto p-2 m-2 min-w-max -right-9 rounded-md shadow-md
                     text-white bg-black  dark:bg-white dark:text-black 
     text-xs font-bold 
     transition-all duration-100 scale-0 origin-top group-hover:scale-100"
@@ -47,7 +47,7 @@ const ProjectCard = (props: Props) => {
                 >
                   <SiOpenlayers />
                   <span
-                    className="absolute w-auto p-2 m-2 min-w-max -right-8 rounded-md shadow-md
+                    className="absolute w-auto p-2 m-2 min-w-max -right-6 rounded-md shadow-md
                     text-white bg-black  dark:bg-white dark:text-black 
     text-xs font-bold 
     transition-all duration-100 scale-0 origin-top group-hover:scale-100"

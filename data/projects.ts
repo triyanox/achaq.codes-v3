@@ -5,7 +5,7 @@ export const projectsdata = [
     description: "File Metadata Microservice",
     source: "https://github.com/triyanox/File-Metadata-Microservice",
     preview: "https://replit.com/@triyanox/boilerplate-project-filemetadata",
-    stack: ["Node.js","Express.js","Multer.js"],
+    stack: ["Node.js", "Express.js", "Multer.js"],
   },
   {
     id: "2",
@@ -13,7 +13,7 @@ export const projectsdata = [
     description: "Exercise Tracker using node.js, express.js and mongodb",
     source: "https://github.com/triyanox/Exercise-Tracker",
     preview: "https://replit.com/@triyanox/boilerplate-project-exercisetracker",
-    stack: ["Node.js","Express.js","Mongodb"],
+    stack: ["Node.js", "Express.js", "Mongodb"],
   },
   {
     id: "3",
@@ -21,7 +21,7 @@ export const projectsdata = [
     description: "URL Shortener Microservice",
     source: "https://github.com/triyanox/URL-Shortener-Microservice",
     preview: "https://replit.com/@triyanox/boilerplate-project-urlshortener",
-    stack: ["Node.js","Express.js","Mongodb"],
+    stack: ["Node.js", "Express.js", "Mongodb"],
   },
   {
     id: "4",
@@ -29,15 +29,15 @@ export const projectsdata = [
     description: "Request Header Parser Microservice",
     source: "https://github.com/triyanox/Request-Headers-Parser",
     preview: "https://replit.com/@triyanox/boilerplate-project-headerparser",
-    stack: ["Node.js","Express.js"],
+    stack: ["Node.js", "Express.js"],
   },
-    {
+  {
     id: "5",
     title: "Timestamp Microservice",
     description: "Timestamp Microservice With Express.js",
     source: "https://github.com/triyanox/Timestamp-Microservice",
     preview: "https://replit.com/@triyanox/boilerplate-project-timestamp",
-    stack: ["Node.js","Express.js"],
+    stack: ["Node.js", "Express.js"],
   },
   {
     id: "6",

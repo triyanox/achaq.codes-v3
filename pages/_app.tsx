@@ -8,7 +8,7 @@ import { ThemeProvider } from "next-themes";
 function MyApp({ Component, pageProps, router }: AppProps) {
   return (
     <ThemeProvider attribute="class">
-      <NextNProgress height={2} color="#6320EE" />
+      <NextNProgress height={2} color="#EB5160" />
       <motion.div
         key={router.route}
         initial="initial"

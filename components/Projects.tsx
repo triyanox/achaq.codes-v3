@@ -43,9 +43,10 @@ function Projects() {
           variants={stagger}
           className="grid grid-cols-1  lg:grid-cols-4 2xl:grid-cols-4 gap-y-4 mt-16 mb-12 lg:gap-y-8 "
         >
-          {projectsdata.map((project) => (
-            <motion.div variants={fadeInUp} key={project.id}>
+          {projectsdata.map((project, i) => (
+            <motion.div variants={fadeInUp} key={i}>
               <ProjectCard
+                key={i}
                 id={project.id}
                 title={project.title}
                 description={project.description}

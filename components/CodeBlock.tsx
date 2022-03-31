@@ -26,12 +26,28 @@ export default function CodeBlock({ children }: CodeBlockProps) {
           className="copy hover:scale-125 transition-all duration-200"
         >
           {isCopied ? (
-            <span className=" text-green-600 dark:text-green-500 text-2xl active:text-[#6E44FF] active:dark:text-[#EB5160] transition-all duration-200">
+            <span className="group text-green-600 dark:text-green-500 text-2xl active:text-[#6E44FF] active:dark:text-[#EB5160] transition-all duration-200">
               <BsCheck2Circle />
+              <span
+                className="absolute w-auto p-2 m-2 min-w-max -right-8 rounded-md shadow-md
+                    text-white bg-black  dark:bg-white dark:text-black 
+    text-xs font-bold 
+    transition-all duration-100 scale-0 origin-top group-hover:scale-100"
+              >
+                Copied 🎉
+              </span>
             </span>
           ) : (
-            <span className=" text-black dark:text-white text-2xl active:text-[#6E44FF] active:dark:text-[#EB5160] transition-all duration-200">
+            <span className="group text-black dark:text-white text-2xl active:text-[#6E44FF] active:dark:text-[#EB5160] transition-all duration-200">
               <HiClipboardCopy />
+              <span
+                className="absolute w-auto p-2 m-2 min-w-max -right-8 rounded-md shadow-md
+                    text-white bg-black  dark:bg-white dark:text-black 
+    text-xs font-bold 
+    transition-all duration-100 scale-0 origin-top group-hover:scale-100"
+              >
+                Copy Me 🚀
+              </span>
             </span>
           )}
         </button>

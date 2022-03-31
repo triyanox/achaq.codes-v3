@@ -18,22 +18,27 @@ const Certifications = () => {
           <CertificationCard
             title="Responsive Web Design"
             link="https://www.freecodecamp.org/certification/achaq/responsive-web-design"
+            provider="FreeCodeCamp"
           />
           <CertificationCard
             title="JavaScript Algorithms and Data Structures"
             link="https://www.freecodecamp.org/certification/achaq/javascript-algorithms-and-data-structures"
+            provider="FreeCodeCamp"
           />
           <CertificationCard
             title="Front End Development Libraries"
             link="https://www.freecodecamp.org/certification/achaq/front-end-development-libraries"
+            provider="FreeCodeCamp"
           />
           <CertificationCard
             title="Scientific Computing with Python"
             link="https://www.freecodecamp.org/certification/achaq/scientific-computing-with-python-v7"
+            provider="FreeCodeCamp"
           />
           <CertificationCard
             title="Back End Development and APIs"
             link="https://www.freecodecamp.org/certification/achaq/back-end-development-and-apis"
+            provider="FreeCodeCamp"
           />
         </div>{" "}
       </div>

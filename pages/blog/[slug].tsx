@@ -102,24 +102,23 @@ const PostPage: React.FC<PostProps> = ({
       link={`https://achaq.codes/blog/${link}`}
       date={new Date(date).toISOString()}
     >
-      <article className="mx-auto px-8 lg:px-2 mb-20 prose prose-md lg:prose-lg dark:prose-invert prose-pre:bg-gray-200 dark:prose-pre:bg-zinc-800 prose-pre:shadow-md prose-pre:border prose-pre:border-gray-200 dark:prose-pre:border-zinc-800 prose-pre:rounded-xl prose-code:rounded-lg">
+      <article className="mx-auto px-4 lg:px-2 mb-20 prose prose-md lg:prose-lg dark:prose-invert prose-pre:bg-gray-200 dark:prose-pre:bg-zinc-800 prose-pre:shadow-md prose-pre:border prose-pre:text-md lg:prose-pre:text-xl prose-pre:border-gray-200 dark:prose-pre:border-zinc-800 prose-pre:rounded-xl prose-code:rounded-lg">
         <div className="flex flex-col items-start pt-28">
           <h1 className="text-xl md:text-2xl text-black dark:text-white font-semibold">
             {title}
           </h1>
-          <div className="text-xs md:text-sm text-satrt text-black dark:text-gray-100 mb-12 flex justify-between gap-8 w-full px-2">
-            <div className="flex flex-row justify-center">
-              <span>
+          <div className="text-sm md:text-lg text-satrt text-black dark:text-gray-100 mb-12 flex justify-between items-center gap-8 w-full px-2">
+            <div className="flex items-center">
+              <div className="hidden md:block">
                 <Image
-                  className="rounded-full aspect-square"
+                  className="rounded-full aspect-square hidden md:block"
                   src={Achaq}
-                  width={20}
-                  height={20}
+                  width={48}
+                  height={48}
                   alt="Mohamed Achaq"
                 />
-              </span>
-
-              <span className="text-satrt text-black dark:text-white ml-4">
+              </div>
+              <span className="text-satrt text-black dark:text-white md:ml-4">
                 {author}
               </span>
             </div>

@@ -1,8 +1,7 @@
 import type { NextPage } from "next";
 import React from "react";
-import Certifications from "../components/Certifications";
+import FeaturedProjects from "../components/FeaturedProjects";
 import Intro from "../components/Intro";
-import Skills from "../components/Skills";
 import ToolBox from "../components/ToolBox";
 import Layout from "../themes/Layout";
 const Home: NextPage = () => {
@@ -15,9 +14,8 @@ const Home: NextPage = () => {
     >
       <>
         <Intro />
-        <Skills />
         <ToolBox />
-        <Certifications />
+        <FeaturedProjects />
       </>
     </Layout>
   );

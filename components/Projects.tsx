@@ -1,6 +1,7 @@
 import { projectsdata } from "../data/projects";
 import { motion } from "framer-motion";
 import ProjectCard from "./ProjectCard";
+import FeaturedProjectsCard from "./FeaturedProjectsCard";
 let easing = [0.6, -0.05, 0.01, 0.99];
 const fadeInUp = {
   initial: {
@@ -38,10 +39,27 @@ function Projects() {
           Projects and Experiments catalog
         </h2>
       </div>
-      <motion.div initial="initial" animate="animate" exit={{ opacity: 0 }}>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-4 mt-16">
+        <FeaturedProjectsCard
+          title="Portfolio"
+          image="/projects/achaqcodes.png"
+          preview="https://achaq.codes"
+          source="https://github.com/triyanox/achaq.codes-v3"
+          id={1}
+          stack={["React.js", "Next.js", "Tailwindcss", "MDX", "Firebase"]}
+        />
+      </div>
+
+      <motion.div
+        initial="initial"
+        animate="animate"
+        exit={{ opacity: 0 }}
+        className="mt-16 mb-12"
+      >
         <motion.div
           variants={stagger}
-          className="grid grid-cols-1  lg:grid-cols-4 2xl:grid-cols-4 gap-y-4 mt-16 mb-12 lg:gap-y-8 "
+          className="grid grid-cols-1  lg:grid-cols-4 2xl:grid-cols-4 gap-y-4  lg:gap-y-8 "
         >
           {projectsdata.map((project, i) => (
             <motion.div variants={fadeInUp} key={i}>

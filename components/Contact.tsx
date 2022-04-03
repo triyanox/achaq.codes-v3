@@ -40,7 +40,7 @@ function ContactForm() {
           <div
             aria-label="copy"
             onClick={handleCopy}
-            className="hover:scale-110 hover:bg-gray-200 dark:hover:bg-zinc-800 rounded-lg p-1 text-black dark:text-white py-3 px-6 cursor-pointer transition-all duration-500 active:scale-90  text-lg flex flex-row gap-2 items-center hover:text-[#6320EE] hover:dark:text-[#FF6B6B]"
+            className="hover:scale-110 hover:bg-gray-200 dark:hover:bg-zinc-800 rounded-lg p-1  py-3 px-6 cursor-pointer transition-all duration-500 active:scale-90  text-lg flex flex-row gap-2 items-center text-[#6320EE] dark:text-[#FF6B6B]"
           >
             <BiCopy />
             <p>Copy My Email</p>

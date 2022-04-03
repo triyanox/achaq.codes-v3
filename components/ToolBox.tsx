@@ -18,21 +18,31 @@ import {
   SiNextdotjs,
   SiSass,
   SiTailwindcss,
+  SiDocker,
+  SiKubernetes,
+  SiFigma,
+  SiAmazonaws,
+  SiPostgresql,
+  SiGo,
+  SiGooglecloud,
 } from "react-icons/si";
 const ToolBox = () => {
   return (
-    <section className="flex flex-col w-full justify-center px-10 md:px-24 xl:px-20 gap-y-8 mt-16">
+    <section className="flex flex-col w-full justify-center px-10 md:px-24 xl:px-20 gap-y-8 mt-16 lg:mt-0">
       <div className="text-black dark:text-white flex flex-col justify-center items-start">
         <h1 className="text-xl md:text-2xl">My Toolbox</h1>
       </div>
       <div className="w-full grid grid-cols-1 lg:grid-cols-2  justify-between text-2xl gap-16">
         <div className="w-full text-black dark:text-white flex justify-center lg:justify-start">
           <h2 className="text-lg md:text-xl text-gray-700 dark:text-gray-200">
-            In terms of tools and technologies, software developement never been
-            easy than before! And those are tools and technologies I use !
+            I love using new technologies and among those technologies I love
+            using <span className="text-yellow-500">Javascript</span>,{" "}
+            <span className="text-blue-700">Typescript</span> and{" "}
+            <span className="text-blue-800">Python</span>. And here is a
+            collection of other tools and technologies I use .
           </h2>
         </div>
-        <div className="mx-auto  grid grid-cols-6 md:grid-cols-9 lg:grid-cols-9 gap-8  text-black dark:text-white text-4xl">
+        <div className="px-4 lg:px-0 grid grid-cols-6 sm:grid-cols-9 lg:grid-cols-8 gap-8  text-black dark:text-white text-4xl">
           <div className="hover:text-orange-600 hover:scale-125 transition-all duration-150 group">
             <SiHtml5 />
             <span
@@ -47,7 +57,7 @@ const ToolBox = () => {
           <div className="hover:text-blue-600 hover:scale-125 transition-all duration-150 group">
             <SiCss3 />
             <span
-              className="absolute w-auto p-2 m-2 min-w-max -right-6 rounded-md shadow-md
+              className="absolute w-auto p-2 m-2 min-w-max -right-3 rounded-md shadow-md
                     text-white bg-black  dark:bg-white dark:text-black 
     text-xs font-bold 
     transition-all duration-100 scale-0 origin-top group-hover:scale-100"
@@ -114,7 +124,7 @@ const ToolBox = () => {
           <div className="hover:text-gray-700 hover:scale-125 transition-all duration-150 group">
             <SiNextdotjs />
             <span
-              className="absolute w-auto p-2 m-2 min-w-max -right-5 rounded-md shadow-md
+              className="absolute w-auto p-2 m-2 min-w-max -right-4 rounded-md shadow-md
                     text-white bg-black  dark:bg-white dark:text-black 
     text-xs font-bold 
     transition-all duration-100 scale-0 origin-top group-hover:scale-100"
@@ -125,7 +135,7 @@ const ToolBox = () => {
           <div className="hover:text-pink-600 hover:scale-125 transition-all duration-150 group">
             <SiSass />
             <span
-              className="absolute w-auto p-2 m-2 min-w-max -right-4 rounded-md shadow-md
+              className="absolute w-auto p-2 m-2 min-w-max -right-2 rounded-md shadow-md
                     text-white bg-black  dark:bg-white dark:text-black 
     text-xs font-bold 
     transition-all duration-100 scale-0 origin-top group-hover:scale-100"
@@ -214,7 +224,7 @@ const ToolBox = () => {
           <div className="hover:text-rose-700 hover:scale-125 transition-all duration-150 group">
             <SiAdobexd />
             <span
-              className="absolute w-auto p-2 m-2 min-w-max -right-8 rounded-md shadow-md
+              className="absolute w-auto p-2 m-2 min-w-max -right-6 rounded-md shadow-md
                     text-white bg-black  dark:bg-white dark:text-black 
     text-xs font-bold 
     transition-all duration-100 scale-0 origin-top group-hover:scale-100"
@@ -225,12 +235,78 @@ const ToolBox = () => {
           <div className="hover:text-blue-800 hover:scale-125 transition-all duration-150 group">
             <SiAdobephotoshop />
             <span
-              className="absolute w-auto p-2 m-2 min-w-max -right-14 rounded-md shadow-md
+              className="absolute w-auto p-2 m-2 min-w-max -right-11 rounded-md shadow-md
                     text-white bg-black  dark:bg-white dark:text-black 
     text-xs font-bold 
     transition-all duration-100 scale-0 origin-top group-hover:scale-100"
             >
               Adobe Photoshop
+            </span>
+          </div>
+          <div className="hover:text-cyan-600 hover:scale-125 transition-all duration-150 group">
+            <SiDocker />
+            <span
+              className="absolute w-auto p-2 m-2 min-w-max -right-4 rounded-md shadow-md
+                    text-white bg-black  dark:bg-white dark:text-black 
+    text-xs font-bold 
+    transition-all duration-100 scale-0 origin-top group-hover:scale-100"
+            >
+              Docker
+            </span>
+          </div>
+          <div className="hover:text-blue-600 hover:scale-125 transition-all duration-150 group">
+            <SiKubernetes />
+            <span
+              className="absolute w-auto p-2 m-2 min-w-max -right-7 rounded-md shadow-md
+                    text-white bg-black  dark:bg-white dark:text-black 
+    text-xs font-bold 
+    transition-all duration-100 scale-0 origin-top group-hover:scale-100"
+            >
+              Kubernetes
+            </span>
+          </div>
+          <div className="hover:text-orange-600 hover:scale-125 transition-all duration-150 group">
+            <SiFigma />
+            <span
+              className="absolute w-auto p-2 m-2 min-w-max -right-4 rounded-md shadow-md
+                    text-white bg-black  dark:bg-white dark:text-black 
+    text-xs font-bold 
+    transition-all duration-100 scale-0 origin-top group-hover:scale-100"
+            >
+              Figma
+            </span>
+          </div>
+          <div className="hover:text-amber-600 hover:scale-125 transition-all duration-150 group">
+            <SiAmazonaws />
+            <span
+              className="absolute w-auto p-2 m-2 min-w-max -right-3 rounded-md shadow-md
+                    text-white bg-black  dark:bg-white dark:text-black 
+    text-xs font-bold 
+    transition-all duration-100 scale-0 origin-top group-hover:scale-100"
+            >
+              AWS
+            </span>
+          </div>
+          <div className="hover:text-cyan-700 hover:scale-125 transition-all duration-150 group">
+            <SiPostgresql />
+            <span
+              className="absolute w-auto p-2 m-2 min-w-max -right-7 rounded-md shadow-md
+                    text-white bg-black  dark:bg-white dark:text-black 
+    text-xs font-bold 
+    transition-all duration-100 scale-0 origin-top group-hover:scale-100"
+            >
+              Postgresql
+            </span>
+          </div>
+          <div className="hover:text-cyan-600 hover:scale-125 transition-all duration-150 group">
+            <SiGo />
+            <span
+              className="absolute w-auto p-2 m-2 min-w-max  rounded-md shadow-md
+                    text-white bg-black  dark:bg-white dark:text-black 
+    text-xs font-bold 
+    transition-all duration-100 scale-0 origin-top group-hover:scale-100"
+            >
+              Go
             </span>
           </div>
         </div>

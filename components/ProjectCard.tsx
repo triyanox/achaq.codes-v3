@@ -14,8 +14,8 @@ interface Props {
 
 const ProjectCard = (props: Props) => {
   return (
-    <div className="flex justify-start items-center w-full rounded-xl h-48 gap-4 hover:bg-gradient-to-r from-[#6E44FF]  to-[#6EE7B7] dark:from-[#EB5160] dark:to-[#3B82F6] animate-gradient-x hover:shadow-xl dark:shadow-[#EB5160] transition-all duration-300 ease-in-out select-none">
-      <div className=" flex w-full flex-col gap-4 h-48 justify-center p-8 bg-white dark:bg-black rounded-xl bg-opacity-70 dark:bg-opacity-70 backdrop-filter backdrop-blur-3xl dark:backdrop-blur-3xl transition-all duration-300 ease-in-out">
+    <div className="flex justify-start items-center w-full rounded-xl h-48 gap-4 bg-white dark:bg-black transition-all duration-300 ease-in-out select-none hover:scale-110">
+      <div className=" flex w-full flex-col gap-4 h-48 justify-center p-8  rounded-xl ">
         <div className=" grid grid-cols-2 justify-between items-start mt-2">
           <div className="text-2xl ">
             <BsFolderFill />

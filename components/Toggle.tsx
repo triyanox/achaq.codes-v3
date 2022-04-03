@@ -2,8 +2,8 @@ import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
 import { motion } from "framer-motion";
 
-import { RiMoonClearFill } from "react-icons/ri";
-import { IoMdSunny } from "react-icons/io";
+import { FaMoon } from "react-icons/fa";
+import { ImSun } from "react-icons/im";
 
 const Toggle = () => {
   const [mounted, setMounted] = useState(false);
@@ -19,7 +19,7 @@ const Toggle = () => {
           onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
           className="text-black dark:text-white text-xl cursor-pointer active:rotate-90 transition-all duration-500"
         >
-          {resolvedTheme === "dark" ? <IoMdSunny /> : <RiMoonClearFill />}
+          {resolvedTheme === "dark" ? <ImSun /> : <FaMoon />}
         </button>
       )}
     </motion.div>

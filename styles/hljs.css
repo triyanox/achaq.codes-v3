@@ -1,14 +1,13 @@
 pre code.hljs {
   display: block;
   overflow-x: auto;
-  font-size: medium;
-  font-family: 'Quicksand', sans-serif;
 }
 code.hljs {
   padding: 1px 2px;
 }
 .hljs {
-  color: grey;
+  color: rgb(105, 105, 105);
+  font-family: "Fredoka", sans-serif;
 }
 .hljs ::selection,
 .hljs::selection {
@@ -24,7 +23,7 @@ code.hljs {
 .hljs-operator,
 .hljs-punctuation,
 .hljs-subst {
-  color: #a9a8a8;
+  color: rgb(105, 105, 105);
 }
 .hljs-operator {
   opacity: 0.7;
@@ -35,7 +34,7 @@ code.hljs {
 .hljs-selector-tag,
 .hljs-template-variable,
 .hljs-variable {
-  color: #a9a8a8;
+  color: rgb(105, 105, 105);
 }
 .hljs-attr,
 .hljs-link,

@@ -34,7 +34,7 @@ const FeaturedProjects = () => {
           preview="https://achaq.codes"
           source="https://github.com/triyanox/achaq.codes-v3"
           id={1}
-          stack={["React.js", "Next.js", "Tailwindcss", "MDX", "Firebase"]}
+          stack={["React.js", "Next.js", "Tailwindcss", "MDX", "Typescript"]}
         />
       </div>
     </section>

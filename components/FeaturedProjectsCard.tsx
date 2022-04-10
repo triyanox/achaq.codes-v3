@@ -75,7 +75,9 @@ const FeaturedProjectsCard = (props: Props) => {
             {props.description}
           </div>
           <div className="flex flex-row justify-start text-2xl md:text-3xl gap-3 text-gray-700 dark:text-gray-300 p-1">
-            {props.stack}
+            {props.stack.map((item, index) => {
+              return <div key={index}>{item}</div>;
+            })}
           </div>
         </div>
       </div>

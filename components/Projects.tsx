@@ -89,7 +89,6 @@ function Projects() {
             <Tailwindcss />,
             <Typescript />,
             <Nodedotjs />,
-            <Javascript />,
             <Express />,
             <Mongodb />,
           ]}

@@ -55,7 +55,6 @@ const FeaturedProjects = () => {
             <Tailwindcss />,
             <Typescript />,
             <Nodedotjs />,
-            <Javascript />,
             <Express />,
             <Mongodb />,
           ]}

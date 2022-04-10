@@ -35,11 +35,9 @@ const ToolBox = () => {
       <div className="w-full grid grid-cols-1 lg:grid-cols-2  justify-between text-2xl gap-16">
         <div className="w-full text-black dark:text-white flex justify-center lg:justify-start">
           <h2 className="text-lg md:text-xl text-gray-700 dark:text-gray-200">
-            I love using new technologies and among those technologies I love
-            using <span className="text-yellow-500">Javascript</span>,{" "}
-            <span className="text-blue-700">Typescript</span> and{" "}
-            <span className="text-blue-800">Python</span>. And here is a
-            collection of other tools and technologies I use .
+            I love to learn new things and use them to solve problems and build
+            great products. And to achieve that I use the following tools and
+            technologies:
           </h2>
         </div>
         <div className="px-4 lg:px-0 grid grid-cols-6 sm:grid-cols-9 lg:grid-cols-8 gap-8  text-black dark:text-white text-4xl">

@@ -1,26 +1,25 @@
 import React from "react";
 import FeaturedProjectsCard from "./FeaturedProjectsCard";
 import {
-  SiFirebase,
-  SiAdobephotoshop,
-  SiAdobexd,
-  SiGit,
-  SiGraphql,
-  SiTensorflow,
-  SiMongodb,
-  SiExpress,
-  SiHtml5,
-  SiCss3,
-  SiJavascript,
-  SiTypescript,
-  SiPython,
-  SiNodedotjs,
-  SiReact,
-  SiNextdotjs,
-  SiSass,
-  SiTailwindcss,
-} from "react-icons/si";
-import { Nextdotjs } from "./Icons";
+  Firebase,
+  Adobephotoshop,
+  Adobexd,
+  Git,
+  Graphql,
+  Tensorflow,
+  Mongodb,
+  Express,
+  Html5,
+  Css3,
+  Javascript,
+  Typescript,
+  Python,
+  Nodedotjs,
+  Reactdotjs,
+  Nextdotjs,
+  Sass,
+  Tailwindcss,
+} from "./Icons";
 const FeaturedProjects = () => {
   return (
     <section className="flex flex-col w-full justify-center px-10 md:px-24 xl:px-20 gap-y-8 mt-16 ">
@@ -34,7 +33,32 @@ const FeaturedProjects = () => {
           preview="https://achaq.codes"
           source="https://github.com/triyanox/achaq.codes-v3"
           id={1}
-          stack={["React.js", "Next.js", "Tailwindcss", "MDX", "Typescript"]}
+          description="My portfolio website built with Next.js, TailwindCSS, and Typescript."
+          stack={[
+            <Nextdotjs />,
+            <Reactdotjs />,
+            <Tailwindcss />,
+            <Typescript />,
+            <Reactdotjs />,
+          ]}
+        />
+        <FeaturedProjectsCard
+          title="Shortify"
+          image="/projects/shortify.png"
+          preview="https://shortify.achaq.codes"
+          source="https://github.com/triyanox/shortify-server"
+          id={2}
+          description="URL shortener service built with Next.js,  Node.js, Express, and MongoDB."
+          stack={[
+            <Nextdotjs />,
+            <Reactdotjs />,
+            <Tailwindcss />,
+            <Typescript />,
+            <Nodedotjs />,
+            <Javascript />,
+            <Express />,
+            <Mongodb />,
+          ]}
         />
       </div>
     </section>

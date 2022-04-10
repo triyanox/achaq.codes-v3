@@ -9,7 +9,8 @@ type Props = {
   preview: string;
   title: string;
   image: string;
-  stack: string[];
+  stack: ReactNode[];
+  description: string;
 };
 const FeaturedProjectsCard = (props: Props) => {
   return (
@@ -70,10 +71,11 @@ const FeaturedProjectsCard = (props: Props) => {
               </Link>
             </div>
           </div>
-          <div className="flex flex-row justify-start text-xs md:text-sm gap-2 text-gray-700 dark:text-gray-300 p-1">
-            {props.stack.map((tech, i) => (
-              <p key={i}>{tech}</p>
-            ))}
+          <div className="flex flex-col justify-start  mb-1 text-sm md:text-lg  text-gray-800 dark:text-gray-200 p-1">
+            {props.description}
+          </div>
+          <div className="flex flex-row justify-start text-2xl md:text-3xl gap-3 text-gray-700 dark:text-gray-300 p-1">
+            {props.stack}
           </div>
         </div>
       </div>

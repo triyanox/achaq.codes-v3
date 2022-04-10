@@ -274,39 +274,7 @@ const ToolBox = () => {
               Figma
             </span>
           </div>
-          <div className="hover:text-amber-600 hover:scale-125 transition-all duration-150 group">
-            <SiAmazonaws />
-            <span
-              className="absolute w-auto p-2 m-2 min-w-max -right-3 rounded-md shadow-md
-                    text-white bg-black  dark:bg-white dark:text-black 
-    text-xs font-bold 
-    transition-all duration-100 scale-0 origin-top group-hover:scale-100"
-            >
-              AWS
-            </span>
-          </div>
-          <div className="hover:text-cyan-700 hover:scale-125 transition-all duration-150 group">
-            <SiPostgresql />
-            <span
-              className="absolute w-auto p-2 m-2 min-w-max -right-7 rounded-md shadow-md
-                    text-white bg-black  dark:bg-white dark:text-black 
-    text-xs font-bold 
-    transition-all duration-100 scale-0 origin-top group-hover:scale-100"
-            >
-              Postgresql
-            </span>
-          </div>
-          <div className="hover:text-cyan-600 hover:scale-125 transition-all duration-150 group">
-            <SiGo />
-            <span
-              className="absolute w-auto p-2 m-2 min-w-max  rounded-md shadow-md
-                    text-white bg-black  dark:bg-white dark:text-black 
-    text-xs font-bold 
-    transition-all duration-100 scale-0 origin-top group-hover:scale-100"
-            >
-              Go
-            </span>
-          </div>
+          
         </div>
       </div>
     </section>

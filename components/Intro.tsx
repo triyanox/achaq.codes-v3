@@ -9,10 +9,10 @@ const Intro = () => {
         <h2 className="text-lg md:text-2xl text-gray-800 dark:text-gray-200">
           I&apos;m a Full Stack Developer, UI and UX designer and Artist.
         </h2>
-        <p className="text-md md:text-lg text-gray-700 dark:text-gray-300">
-          I&apos;ve got into programming to unleash my creativity and bring my
-          ideas to life by creating great products.I love using Python,
-          Javascript and Typescript and contrubuting to open source projects .
+        <p className="text-lg md:text-xl text-gray-700 dark:text-gray-300">
+          I&apos;m building web applications using the latest technologies and
+          libraries.Also I&apos;m passionate about creating beautiful and
+          intuitive user interfaces and building backend services.
         </p>
         <Link href="/contact" passHref>
           <a className="mt-2 text-lg md:text-xl text-[#6E44FF] dark:text-[#EB5160] hover:bg-gray-200 dark:hover:bg-zinc-800 hover:scale-105 hover:px-4 py-2  transition-all ease-in duration-200 active:scale-90 rounded-lg">

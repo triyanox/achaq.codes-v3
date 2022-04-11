@@ -35,7 +35,7 @@ function ContactForm() {
       </div>
       <div className="flex flex-col justify-center items-center mt-8 px-auto">
         <h3 className="text-black dark:text-white mb-2 text-center text-xl">
-          I'm always open to new opportunities and collaborations so feel free
+          I&apos;m always open to new opportunities and collaborations so feel free
           to drop a line .
         </h3>
         <div className="mt-8  flex  flex-col items-center justify-center gap-4 ">

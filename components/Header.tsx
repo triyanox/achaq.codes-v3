@@ -25,7 +25,7 @@ function NavItem({ href, text }: NavItems) {
           "hidden md:inline-block p-1 sm:px-3 sm:py-2 rounded-lg hover:bg-gray-200 dark:hover:bg-zinc-800 transition-all"
         )}
       >
-        <span className="capsize">{text}</span>
+        <span >{text}</span>
       </a>
     </NextLink>
   );

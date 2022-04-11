@@ -23,32 +23,33 @@ function ContactForm() {
   return (
     <section
       id="contact"
-      className=" h-screen px-4 lg:px-12 justify-center items-center "
+      className=" h-screen px-10 lg:px-12 justify-center items-center "
     >
       <div className="w-full text-black dark:text-white pt-24 text-center">
-        <h1 className="text-3xl mb-4 text-black dark:text-white">Contact</h1>
-        <h2 className="text-xl text-gray-600 dark:text-gray-400">
+        <h1 className="text-center text-3xl font-semibold animate-gradient-x text-transparent bg-clip-text bg-gradient-to-r from-[#6E44FF] to-[#EB5160]">
+          Contact
+        </h1>
+        <h2 className="text-lg md:text-2xl font-medium  px-8 md:px-0  text-gray-800 dark:text-gray-200 mt-12">
           Get in Touch
         </h2>
       </div>
-      <div className="flex flex-col justify-center items-center mt-16 px-auto">
+      <div className="flex flex-col justify-center items-center mt-8 px-auto">
+        <h3 className="text-black dark:text-white mb-2 text-center text-xl">
+          I'm always open to new opportunities and collaborations so feel free
+          to drop a line .
+        </h3>
         <div className="mt-8  flex  flex-col items-center justify-center gap-4 ">
-          <div className="select-none w-80 text-2xl p-6 rounded-lg shadow-md hover:scale-110 transition-all duration-200 h-12  text-white   dark:text-black  bg-black dark:bg-white broder flex justify-center items-center">
-            motriyanox@gmail.com
-          </div>
-
-          <div
+          <button
             aria-label="copy"
             onClick={handleCopy}
-            className="hover:scale-110 hover:bg-gray-200 dark:hover:bg-zinc-800 rounded-lg p-1  py-3 px-6 cursor-pointer transition-all duration-500 active:scale-90  text-lg flex flex-row gap-2 items-center text-[#6320EE] dark:text-[#FF6B6B]"
+            className="select-none gap-4 mt-2 text-lg md:text-2xl px-12 py-2 rounded-xl shadow-md hover:scale-110 transition-all duration-200  active:scale-95 text-white hover:bg-[#6E44FF] dark:hover:bg-[#EB5160]  dark:text-black  bg-black dark:bg-white broder flex justify-center items-center"
           >
-            <BiCopy />
-            <p>Copy My Email</p>
-          </div>
+            <BiCopy /> Copy My Email
+          </button>
         </div>
-        <div className=" flex justify-start items-center flex-col mt-8 ">
+        <div className=" flex justify-start items-center flex-col mt-12 ">
           <h3 className="text-black dark:text-white mb-2 text-center text-xl">
-            And other ways to get in touch with me !
+            or connect with me on any of the following platforms.
           </h3>
           <div className="mt-8 flex flex-row justify-center items-center gap-4">
             <Link href="https://www.linkedin.com/in/achaqdev/" passHref>

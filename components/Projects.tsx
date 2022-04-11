@@ -58,7 +58,7 @@ function Projects() {
           Projects
         </h1>
         <h2 className="text-lg md:text-2xl font-medium  px-8 lg:px-0  text-gray-800 dark:text-gray-200 mt-12">
-          Projects I've worked on :
+          Projects I&apos;ve worked on :
         </h2>
       </div>
 

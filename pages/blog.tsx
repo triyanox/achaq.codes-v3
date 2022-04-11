@@ -29,11 +29,16 @@ const Blog: NextPage<PostsProps> = ({ posts }) => {
       preview="blog"
     >
       {" "}
-      <section id="Blog" className="  px-12 justify-center items-center ">
+      <section
+        id="Blog"
+        className="px-2  md:px-12 justify-center items-center "
+      >
         <div className="w-full text-black dark:text-white pt-24 text-center">
-          <h1 className="text-3xl mb-4 text-black dark:text-white">Blog</h1>
-          <h2 className="text-xl text-gray-600 dark:text-gray-400">
-            Check out my latest blog posts
+          <h1 className="text-center text-3xl font-semibold animate-gradient-x text-transparent bg-clip-text bg-gradient-to-r from-[#6E44FF] to-[#EB5160]">
+            Blog
+          </h1>
+          <h2 className="text-lg md:text-2xl font-medium  px-8 md:px-0  text-gray-800 dark:text-gray-200 mt-8">
+            My thoughts on the web, programming, and life.
           </h2>
         </div>
         <div className=" flex justify-start items-center flex-col pt-8 ">

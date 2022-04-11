@@ -7,7 +7,7 @@ code.hljs {
 }
 .hljs {
   color: rgb(105, 105, 105);
-  font-family: "Fredoka", sans-serif;
+  font-family: inherit;
 }
 .hljs ::selection,
 .hljs::selection {

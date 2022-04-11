@@ -29,7 +29,7 @@ function ContactForm() {
         <h1 className="text-center text-3xl font-semibold animate-gradient-x text-transparent bg-clip-text bg-gradient-to-r from-[#6E44FF] to-[#EB5160]">
           Contact
         </h1>
-        <h2 className="text-lg md:text-2xl font-medium  px-8 md:px-0  text-gray-800 dark:text-gray-200 mt-4">
+        <h2 className="text-lg md:text-2xl font-medium  px-8 md:px-0  text-gray-800 dark:text-gray-200 mt-8">
           Get in Touch
         </h2>
       </div>

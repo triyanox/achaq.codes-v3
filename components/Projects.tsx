@@ -53,14 +53,16 @@ function Projects() {
       id="projects"
       className=" px-4 lg:px-12 justify-center items-center  "
     >
-      <div className="w-full text-black dark:text-white pt-24 text-center">
-        <h1 className="text-3xl mb-4 text-black dark:text-white">Projects</h1>
-        <h2 className="text-xl text-gray-600 dark:text-gray-400">
-          Projects and Experiments catalog
+      <div className="w-full text-black dark:text-white pt-28 text-start">
+        <h1 className="text-center text-3xl font-semibold animate-gradient-x text-transparent bg-clip-text bg-gradient-to-r from-[#6E44FF] to-[#EB5160]">
+          Projects
+        </h1>
+        <h2 className="text-lg md:text-2xl font-medium  px-8 lg:px-0  text-gray-800 dark:text-gray-200 mt-12">
+          Projects I've worked on :
         </h2>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-4 mt-8">
+      <div className="grid grid-cols-1 px-2 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-4 mt-16">
         <FeaturedProjectsCard
           title="Portfolio"
           image="/projects/achaqcodes.png"
@@ -94,16 +96,20 @@ function Projects() {
           ]}
         />
       </div>
-
+      <div className="w-full mb-20 px-8 lg:px-0 text-black dark:text-white pt-12 text-start">
+        <h2 className="text-lg md:text-2xl font-medium   text-gray-800 dark:text-gray-200 ">
+          Other Projects and Experiments :
+        </h2>
+      </div>
       <motion.div
         initial="initial"
         animate="animate"
         exit={{ opacity: 0 }}
-        className="mt-16 mb-12"
+        className=" mb-12"
       >
         <motion.div
           variants={stagger}
-          className="grid grid-cols-1  lg:grid-cols-4 2xl:grid-cols-4 gap-y-4  lg:gap-y-8 "
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 2xl:grid-cols-4 gap-y-4  lg:gap-y-8 "
         >
           {projectsdata.map((project, i) => (
             <motion.div variants={fadeInUp} key={i}>

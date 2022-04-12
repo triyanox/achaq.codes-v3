@@ -25,6 +25,7 @@ const Intro = () => {
           height={200}
           alt="Mohamed Achaq"
           className="rounded-full  "
+          quality={100}
         />
       </div>
     </section>

@@ -25,7 +25,7 @@ function NavItem({ href, text }: NavItems) {
           "hidden md:inline-block p-1 sm:px-3 sm:py-2 rounded-lg hover:bg-gray-200 dark:hover:bg-zinc-800 transition-all"
         )}
       >
-        <span >{text}</span>
+        <span>{text}</span>
       </a>
     </NextLink>
   );
@@ -34,7 +34,7 @@ function NavItem({ href, text }: NavItems) {
 function Header() {
   const { active, setActive } = useContext(ActiveContext);
   return (
-    <section className="fixed flex top-0 h-16 items-center py-2 w-full bg-zinc-50 dark:bg-zinc-900 px-8 md:px-24 xl:px-20 z-50 bg-opacity-40 dark:bg-opacity-80 backdrop-filter backdrop-blur-xl">
+    <section className="fixed flex top-0 h-16 items-center py-2 w-full bg-white dark:bg-black px-8 md:px-24 xl:px-20 z-50 bg-opacity-40 dark:bg-opacity-40 backdrop-filter backdrop-blur-xl">
       <nav className=" w-full  flex items-center justify-between flex-row ">
         <div className=" w-full lg:inline-flex  hidden lg:visible text-xl ">
           <NavItem href="/" text="Home" />

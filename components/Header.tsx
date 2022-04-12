@@ -20,7 +20,7 @@ function NavItem({ href, text }: NavItems) {
       <a
         className={cn(
           isActive
-            ? "font-semibold text-[#6E44FF] dark:text-[#EB5160]"
+            ? "font-semibold animate-gradient-x text-transparent bg-clip-text bg-gradient-to-r from-[#6E44FF] to-[#EB5160]"
             : "font-normal text-black dark:text-white",
           "hidden md:inline-block p-1 sm:px-3 sm:py-2 rounded-lg hover:bg-gray-200 dark:hover:bg-zinc-800 transition-all"
         )}

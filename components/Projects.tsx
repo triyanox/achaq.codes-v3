@@ -75,7 +75,7 @@ function Projects() {
             <Reactdotjs />,
             <Tailwindcss />,
             <Typescript />,
-            <Reactdotjs />,
+
           ]}
         />
         <FeaturedProjectsCard

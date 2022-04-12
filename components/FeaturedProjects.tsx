@@ -39,7 +39,6 @@ const FeaturedProjects = () => {
             <Reactdotjs />,
             <Tailwindcss />,
             <Typescript />,
-            <Reactdotjs />,
           ]}
         />
         <FeaturedProjectsCard

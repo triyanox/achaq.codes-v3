@@ -35,14 +35,14 @@ function ContactForm() {
       </div>
       <div className="flex flex-col justify-center items-center mt-8 px-auto">
         <h3 className="text-black dark:text-white mb-2 text-center text-xl">
-          I&apos;m always open to new opportunities and collaborations so feel free
-          to drop a line .
+          I&apos;m always open to new opportunities and collaborations so feel
+          free to drop a line .
         </h3>
         <div className="mt-8  flex  flex-col items-center justify-center gap-4 ">
           <button
             aria-label="copy"
             onClick={handleCopy}
-            className="select-none gap-4 mt-2 text-lg md:text-2xl px-12 py-2 rounded-lg shadow-md hover:scale-110 transition-all duration-200  active:scale-95 text-white hover:bg-gradient-to-r hover:from-[#6E44FF] hover:to-[#EB5160] hover:animate-gradient-x  dark:text-black  bg-black dark:bg-white broder flex justify-center items-center"
+            className="select-none gap-4 mt-2 text-lg md:text-2xl px-12 py-2 rounded-lg shadow-md hover:scale-110 transition-all duration-200  active:scale-95 text-white hover:bg-[#6E44FF] hover:dark:bg-[#EB5160]  dark:text-black  bg-black dark:bg-white  flex justify-center items-center"
           >
             <BiCopy /> Copy My Email
           </button>

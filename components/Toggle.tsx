@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
 import { motion } from "framer-motion";
 
-import { FaMoon } from "react-icons/fa";
+import { WiMoonAltNew } from "react-icons/wi";
 import { ImSun } from "react-icons/im";
 
 const Toggle = () => {
@@ -19,7 +19,7 @@ const Toggle = () => {
           onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
           className="text-black dark:text-white text-xl cursor-pointer active:rotate-90 transition-all duration-500"
         >
-          {resolvedTheme === "dark" ? <ImSun /> : <FaMoon />}
+          {resolvedTheme === "dark" ? <ImSun /> : <WiMoonAltNew />}
         </button>
       )}
     </motion.div>

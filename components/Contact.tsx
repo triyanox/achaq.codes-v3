@@ -42,7 +42,7 @@ function ContactForm() {
           <button
             aria-label="copy"
             onClick={handleCopy}
-            className="select-none gap-4 mt-2 text-lg md:text-2xl px-12 py-2 rounded-xl shadow-md hover:scale-110 transition-all duration-200  active:scale-95 text-white hover:bg-[#6E44FF] dark:hover:bg-[#EB5160]  dark:text-black  bg-black dark:bg-white broder flex justify-center items-center"
+            className="select-none gap-4 mt-2 text-lg md:text-2xl px-12 py-2 rounded-lg shadow-md hover:scale-110 transition-all duration-200  active:scale-95 text-white hover:bg-gradient-to-r hover:from-[#6E44FF] hover:to-[#EB5160] hover:animate-gradient-x  dark:text-black  bg-black dark:bg-white broder flex justify-center items-center"
           >
             <BiCopy /> Copy My Email
           </button>

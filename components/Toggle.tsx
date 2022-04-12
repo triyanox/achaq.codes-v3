@@ -3,7 +3,7 @@ import { useTheme } from "next-themes";
 import { motion } from "framer-motion";
 
 import { FaMoon } from "react-icons/fa";
-import { BsSunFill } from "react-icons/bs";
+import { BsFillSunFill } from 'react-icons/bs'
 
 const Toggle = () => {
   const [mounted, setMounted] = useState(false);
@@ -19,7 +19,7 @@ const Toggle = () => {
           onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
           className="text-black dark:text-white text-xl cursor-pointer active:rotate-90 transition-all duration-500"
         >
-          {resolvedTheme === "dark" ? <BsSunFill /> : <FaMoon />}
+          {resolvedTheme === "dark" ? <BsFillSunFill /> : <FaMoon />}
         </button>
       )}
     </motion.div>

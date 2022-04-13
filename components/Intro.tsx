@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import achaq from "../assets/achaq.png";
+import achaq from "../assets/achaq-200.png";
 const Intro = () => {
   return (
     <section className="lg:h-screen mt-28 lg:mt-0 w-full flex flex-col-reverse  justify-center items-center px-10 md:px-24 xl:px-20 gap-y-8">

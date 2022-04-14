@@ -13,7 +13,7 @@ const Intro = () => {
         </h2>
 
         <Link href="/contact" passHref>
-          <button className="select-none mt-4 text-2xl px-6 py-2 rounded-lg shadow-md hover:scale-110 transition-all duration-200  active:scale-95 text-white    hover:bg-[#6E44FF] hover:dark:bg-[#EB5160] dark:text-black  bg-black dark:bg-white broder flex justify-center items-center">
+          <button className="select-none mt-4 text-lg md:text-2xl px-8 py-2 rounded-lg shadow-md hover:scale-110 transition-all duration-200  active:scale-95 text-white     dark:text-black  bg-black dark:bg-white broder flex justify-center items-center">
             Lets talk!
           </button>
         </Link>

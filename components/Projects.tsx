@@ -57,7 +57,7 @@ function Projects() {
         <h1 className="text-center text-3xl font-semibold animate-gradient-x text-transparent bg-clip-text bg-gradient-to-r from-[#6E44FF] to-[#EB5160]">
           Projects
         </h1>
-        <h2 className="text-lg md:text-2xl font-medium  px-8 lg:px-0  text-gray-800 dark:text-gray-200 mt-12">
+        <h2 className="text-xl md:text-2xl font-medium  px-8 lg:px-0  text-gray-800 dark:text-gray-200 mt-12">
           Projects I&apos;ve worked on :
         </h2>
       </div>
@@ -75,7 +75,6 @@ function Projects() {
             <Reactdotjs />,
             <Tailwindcss />,
             <Typescript />,
-
           ]}
         />
         <FeaturedProjectsCard
@@ -97,7 +96,7 @@ function Projects() {
         />
       </div>
       <div className="w-full mb-20 px-8 lg:px-0 text-black dark:text-white pt-12 text-start">
-        <h2 className="text-lg md:text-2xl font-medium   text-gray-800 dark:text-gray-200 ">
+        <h2 className="text-xl md:text-2xl font-medium   text-gray-800 dark:text-gray-200 ">
           Other Projects and Experiments :
         </h2>
       </div>

@@ -16,7 +16,7 @@ function ContactForm() {
     setIsOpen(true);
   }
   function handleCopy() {
-    navigator.clipboard.writeText("motriyanox@gmail.com");
+    navigator.clipboard.writeText("contact@achaq.codes");
     openModal();
   }
 
@@ -33,16 +33,16 @@ function ContactForm() {
           Get in Touch
         </h2>
       </div>
-      <div className="flex flex-col justify-center items-center mt-8 px-auto">
+      <div className="flex flex-col justify-center items-center mt-12 px-auto">
         <h3 className="text-black dark:text-white mb-2 text-center text-xl">
           I&apos;m always open to new opportunities and collaborations so feel
           free to drop a line .
         </h3>
-        <div className="mt-8  flex  flex-col items-center justify-center gap-4 ">
+        <div className="mt-4  flex  flex-col items-center justify-center gap-4 ">
           <button
             aria-label="copy"
             onClick={handleCopy}
-            className="select-none gap-4 mt-2 text-lg md:text-2xl px-6 py-2 rounded-lg shadow-md hover:scale-110 transition-all duration-200  active:scale-95 text-white hover:bg-[#6E44FF] hover:dark:bg-[#EB5160]  dark:text-black  bg-black dark:bg-white  flex justify-center items-center"
+            className="select-none gap-4 mt-2 text-lg md:text-2xl px-4 py-2 rounded-lg shadow-md hover:scale-110 transition-all duration-200  active:scale-95  text-white     dark:text-black    bg-black dark:bg-white  flex justify-center items-center"
           >
             <BiCopy /> Copy My Email
           </button>
@@ -51,7 +51,7 @@ function ContactForm() {
           <h3 className="text-black dark:text-white mb-2 text-center text-xl">
             or connect with me on any of the following platforms.
           </h3>
-          <div className="mt-8 flex flex-row justify-center items-center gap-4">
+          <div className="mt-4 flex flex-row justify-center items-center gap-4">
             <Link href="https://www.linkedin.com/in/achaqdev/" passHref>
               <a target="_blank">
                 <h1 className="text-black dark:text-white hover:scale-125 transition-all duration-200 text-3xl hover:text-blue-600 hover:dark:text-blue-600 ">
@@ -134,7 +134,7 @@ function ContactForm() {
                       type="button"
                       className="inline-flex justify-center px-4 py-2 text-sm font-medium bg-white dark:bg-black border border-transparent rounded-md active:scale-110 transition-all duration-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-500"
                     >
-                      <p className="text-[#6320EE] dark:text-[#FF6B6B] text-md">
+                      <p className="text-black     dark:text-white text-md">
                         Awesome !
                       </p>
                     </button>

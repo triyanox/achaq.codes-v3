@@ -37,12 +37,12 @@ const Blog: NextPage<PostsProps> = ({ posts }) => {
           <h1 className="text-center text-3xl font-semibold animate-gradient-x text-transparent bg-clip-text bg-gradient-to-r from-[#6E44FF] to-[#EB5160]">
             Blog
           </h1>
-          <h2 className="text-lg md:text-2xl font-medium  px-8 md:px-0  text-gray-800 dark:text-gray-200 mt-8">
+          <h2 className="text-xl md:text-2xl font-medium  px-8 md:px-0  text-gray-800 dark:text-gray-200 mt-8">
             My thoughts on the web, programming, and life.
           </h2>
         </div>
         <div className=" flex justify-start items-center flex-col pt-8 ">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-4 lg:gap-4 md:mx-4 lg:mx-8 mt-8 justify-center items-start  ">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-4 lg:gap-4 md:mx-8 lg:mx-12 mt-8 justify-center items-start  ">
             {posts
               .sort(
                 (
